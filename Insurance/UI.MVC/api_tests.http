@@ -1,0 +1,60 @@
+﻿// Http-request
+POST https://localhost:5001/api/Garages HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "Name":"Volkswagen AG",
+  "Adress":"Groeningenlei 4, 2550 Kontich",
+  "Telnr":"034508050"
+}
+
+###
+// Http-request
+GET https://localhost:5001/api/Garages HTTP/1.1
+Accept: application/json
+
+
+###
+// Http-request
+GET https://localhost:5001/api/Drivers/dropdown/4 HTTP/1.1
+Accept: application/json
+
+###
+GET https://localhost:5001/api/Garages?id=1 HTTP/1.1
+Accept: application/json
+
+###
+// Http-request
+PUT https://localhost:5001/api/Garages HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 1,
+  "Name":"test",
+  "Adress":"test address",
+  "Telnr":"0488857339"
+}
+
+###
+// Http-request
+PUT https://localhost:5001/api/Garages HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+  "id": 1,
+  "Name":"t",
+  "Adress":"test address",
+  "Telnr":"0488857339"
+}
+
+###
+GET https://localhost:5001/api/Drivers?socialnumber=4 HTTP/1.1
+Accept: application/json
+
+
+###
+GET https://localhost:5001/api/Drivers/cars/4 HTTP/1.1
+Accept: application/json

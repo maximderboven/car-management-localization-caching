@@ -1,0 +1,28 @@
+﻿@using Insurance.Domain
+@model IEnumerable<Insurance.Domain.Garage>
+
+@{
+    ViewBag.Title = "Garages";
+    Layout = "_Layout";
+}
+
+<!-- Titel -->
+<h2>All Garages</h2>
+<!-- tabel -->
+<table id="garages" class="table">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Adress</th>
+        <th scope="col">Telnr</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+<button type="button" class="btn btn-primary" id="loadGarages">Refresh garages list</button>
+
+@section Scripts {
+    <script src="~/js/garage/index.js" defer></script>
+}

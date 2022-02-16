@@ -1,0 +1,42 @@
+﻿@using Insurance.Domain
+@model IEnumerable<Insurance.Domain.Car>
+
+@{
+    ViewBag.Title = "All Cars";
+    Layout = "_Layout";
+}
+
+<!-- Titel -->
+<h2>All Cars</h2>
+<!-- tabel -->
+<table class="table">
+    <thead class="thead-light">
+    <tr>
+        <th scope="col">Brand</th>
+        <th scope="col">Fuel</th>
+        <th scope="col">Seats</th>
+        <th scope="col">Miles</th>
+        <th scope="col">Purchaseprice</th>
+        <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+
+    @foreach (var car in Model)
+    {
+        <tr>
+            <td>@car.Brand</td>
+            <td>@car.Fuel</td>
+            <td>@car.Seats</td>
+            <td>@car.Mileage</td>
+            @{
+                var PurchasePrice = car.PurchasePrice != null ? car.PurchasePrice.ToString() : "Not Known";
+            }
+            <td>@PurchasePrice</td>
+            <td>
+                <a asp-controller="Car" asp-action="Details" asp-route-numberplate="@car.NumberPlate">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

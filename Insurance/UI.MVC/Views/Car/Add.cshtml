@@ -1,0 +1,56 @@
+﻿@using Insurance.Domain
+@model CarViewModel
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+
+    List<Garage> garages = (List<Garage>) ViewData["garages"];
+}
+
+<h2>Add a Car</h2>
+
+<form asp-controller="Car" asp-action="Add" method="post">
+    <div class="form-group">
+        <label asp-for="Fuel">Fuel</label>
+        <select asp-for="Fuel" asp-items="@Html.GetEnumSelectList<Fuel>()" class="form-control">
+        </select>
+        <span asp-validation-for="Fuel" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Brand">Brand</label>
+        <input asp-for="Brand" class="form-control" type="text"/>
+        <span asp-validation-for="Brand" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Mileage">Mileage (Double)</label>
+        <!--  asp-is-invariant="true" is voor de komma en punt regio (werkt alsnog niet)-->
+        <input asp-for="Mileage" type="number" step="0.01"  class="form-control"/>
+        <span asp-validation-for="Mileage" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Seats">Amount of Seats</label>
+        <input type="number" asp-for="Seats" min="1" max="8"/>
+        <span asp-validation-for="Seats" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PurchasePrice">Purchase Price</label>
+        <input type="number" asp-for="PurchasePrice"/>
+        <span asp-validation-for="PurchasePrice" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Garage">Garage</label>
+        <select asp-for="Garage" class="form-control">
+            <!-- https://stackoverflow.com/questions/58958881/how-to-make-form-input-for-list-of-objects -->
+            <!-- Of mijn methode :)) -->
+            @foreach (Garage g in garages)
+            {
+                <option value="@g.Id">@g.Name</option>
+            }
+        </select>
+        <span asp-validation-for="Garage" class="text-danger"></span>
+    </div>
+    
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="submit" class="btn btn-primary"  value="Add"/>
+    <input type="reset" class="btn btn-primary" value="Reset"/>
+</form>
