@@ -1,9 +1,11 @@
-﻿namespace Distances;
+﻿namespace Distances {
 
-public interface IDistanceLocalizer {
+    public interface IDistanceLocalizer {
 
-    IDistance Convert (IDistance distance, DistanceUnit metricUnit, DistanceUnit imperialUnit);
+        IDistance Convert (IDistance distance, DistanceUnit metricUnit, DistanceUnit imperialUnit);
 
-    IDistance Convert (double value, DistanceUnit originalUnit, DistanceUnit alternativeUnit);
+        IDistance Convert (double value, DistanceUnit originalUnit, DistanceUnit alternativeUnit);
+
+    }
 
 }
