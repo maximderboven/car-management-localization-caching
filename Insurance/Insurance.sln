@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31205.134
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.CA", "UI.CA\UI.CA.csproj", "{3D7E5B8D-3406-4A35-A963-8D6B39E65080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{C340A367-A83C-449D-9303-D339C60737FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{C340A367-A83C-449D-9303-D339C60737FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{1DDC1A8A-CBAC-4EB5-8F68-110543C42357}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "BL\BL.csproj", "{1DDC1A8A-CBAC-4EB5-8F68-110543C42357}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{33423C71-8B65-4E61-BADF-B88F6DDEBA1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{33423C71-8B65-4E61-BADF-B88F6DDEBA1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI.MVC", "UI.MVC\UI.MVC.csproj", "{A5471FF2-0294-41D8-870D-F57A4BEAEEF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI.MVC", "UI.MVC\UI.MVC.csproj", "{A5471FF2-0294-41D8-870D-F57A4BEAEEF9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Distances", "Distances\Distances.csproj", "{3E3D4664-54D2-42CF-9764-BC293780AF2B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A5471FF2-0294-41D8-870D-F57A4BEAEEF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5471FF2-0294-41D8-870D-F57A4BEAEEF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5471FF2-0294-41D8-870D-F57A4BEAEEF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E3D4664-54D2-42CF-9764-BC293780AF2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3D4664-54D2-42CF-9764-BC293780AF2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3D4664-54D2-42CF-9764-BC293780AF2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3D4664-54D2-42CF-9764-BC293780AF2B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
