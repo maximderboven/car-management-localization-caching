@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Text;
 using Insurance.BL;
 using Insurance.Domain;
 using Microsoft.AspNetCore.Mvc;

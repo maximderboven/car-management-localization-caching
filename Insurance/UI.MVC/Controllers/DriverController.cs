@@ -1,5 +1,4 @@
 ﻿using Insurance.BL;
-using Insurance.DAL.EF;
 using Microsoft.AspNetCore.Mvc;
 
 namespace UI.MVC.Controllers

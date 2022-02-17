@@ -1,5 +1,4 @@
-﻿using System;
-using Insurance.Domain;
+﻿using Insurance.Domain;
 
 namespace Insurance.UI.CA.Extensions
 {

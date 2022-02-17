@@ -1,7 +1,5 @@
 ﻿using System.Linq;
 using Insurance.BL;
-using Insurance.DAL.EF;
-using Insurance.Domain;
 using Microsoft.AspNetCore.Mvc;
 using UI.MVC.Models;
 

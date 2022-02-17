@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore;
 using Insurance.Domain;
 
 namespace Insurance.DAL.EF

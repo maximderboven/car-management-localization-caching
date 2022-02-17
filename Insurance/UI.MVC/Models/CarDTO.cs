@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using Insurance.Domain;
-
-namespace UI.MVC.Models
+﻿namespace UI.MVC.Models
 {
     public class CarDTO
     {
