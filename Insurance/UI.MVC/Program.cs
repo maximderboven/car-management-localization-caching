@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace Insurance.UI.MVC
+namespace UI.MVC
 {
     public class Program
     {

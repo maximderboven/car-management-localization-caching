@@ -1,70 +1,79 @@
+using System.Collections.Generic;
+using System.Globalization;
+using Distances;
 using Insurance.BL;
 using Insurance.DAL;
 using Insurance.DAL.EF;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Options;
 
-
-namespace Insurance.UI.MVC
-{
-    public class Startup
-    {
-        public Startup(IConfiguration configuration)
-        {
+namespace UI.MVC {
+    public class Startup {
+        public Startup (IConfiguration configuration) {
             Configuration = configuration;
         }
 
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            //IRepository repository = new Repository(new InsuranceDbContext());
-            //IManager manager = new Manager(repository);
-            //services.AddSingleton(manager);
-            //services.AddDbContext<InsuranceDbContext>(ServiceLifetime.Scoped);
-            services.AddDbContext<InsuranceDbContext>();
-            services.AddScoped<IRepository, Repository>();
-            services.AddScoped<IManager, Manager>();
-            
-            services.AddControllersWithViews();
+        public void ConfigureServices (IServiceCollection services) {
+
+            // Localization
+            services.AddLocalization (opt => { opt.ResourcesPath = "Resources"; });
+            services.AddMvc ().AddViewLocalization (LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization ();
+
+            services.Configure<RequestLocalizationOptions> (
+                opt => {
+                    List<CultureInfo> supportedCultures = new List<CultureInfo>
+                    {
+                        new CultureInfo ("en-US"),
+                        new CultureInfo ("fr-FR"),
+                        new CultureInfo ("nl-BE")
+                    };
+                    opt.DefaultRequestCulture = new RequestCulture ("en-US");
+                    opt.SupportedCultures = supportedCultures;
+                    opt.SupportedUICultures = supportedCultures;
+                });
+
+
+            services.AddScoped<IDistanceLocalizer, DistanceLocalizer> ();
+
+            // Old dependency injection
+            services.AddDbContext<InsuranceDbContext> ();
+            services.AddScoped<IRepository, Repository> ();
+            services.AddScoped<IManager, Manager> ();
+
+            services.AddControllersWithViews ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            //app.UseRequestLocalization();
-            //added voor punt - komma culture - Nu is het altijd ',' 
-            //(Werkt niet :'( ) 
-            //var cultureInfo = new CultureInfo("nl-BE");
-            //cultureInfo.NumberFormat.NumberDecimalSeparator = ",";
-            //CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-            //CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
-            
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
+        public void Configure (IApplicationBuilder app, IWebHostEnvironment env) {
+
+            if (env.IsDevelopment ()) {
+                app.UseDeveloperExceptionPage ();
+            } else {
+                app.UseExceptionHandler ("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                app.UseHsts ();
             }
 
-            app.UseHttpsRedirection();
-            app.UseStaticFiles();
+            app.UseHttpsRedirection ();
+            app.UseStaticFiles ();
 
-            app.UseRouting();
+            app.UseRouting ();
 
-            app.UseAuthorization();
+            app.UseAuthorization ();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllerRoute(
+            app.UseRequestLocalization (app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>> ().Value);
+
+            app.UseEndpoints (endpoints => {
+                endpoints.MapControllerRoute (
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });

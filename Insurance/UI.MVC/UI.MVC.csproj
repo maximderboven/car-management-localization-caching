@@ -1,12 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <RootNamespace>Insurance.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+        <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+        <AssemblyName>$(MSBuildProjectName.Replace(" ", "_"))</AssemblyName>
     </PropertyGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\BL\BL.csproj" />
+      <ProjectReference Include="..\Distances\Distances.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,4 +1,6 @@
-﻿namespace Distances {
+﻿using System;
+
+namespace Distances {
 
     public class Distance : IDistance {
 
