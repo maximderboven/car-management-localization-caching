@@ -11,4 +11,9 @@
       <ProjectReference Include="..\Distances\Distances.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Resources\Views\Driver\" />
+      <Folder Include="Resources\Views\Garage\" />
+    </ItemGroup>
+
 </Project>

@@ -2,7 +2,11 @@
 
     public interface IDistance {
 
-        internal IDistance Convert (DistanceUnit unit);
+        public double Value { get; }
+
+        public DistanceUnit DistanceUnit { get; }
+
+        public IDistance Convert (DistanceUnit unit);
 
         public string? ToString ();
 

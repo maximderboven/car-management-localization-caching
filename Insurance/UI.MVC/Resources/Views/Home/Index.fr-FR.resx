@@ -132,4 +132,16 @@
   <data name="We take your privacy serious." xml:space="preserve">
     <value>We take your privacy serious.</value>
   </data>
+  <data name="Home Page" xml:space="preserve">
+      <value>Home Page</value>
+      <comment>Home Page</comment>
+  </data>
+  <data name="View" xml:space="preserve">
+      <value>View</value>
+      <comment>View</comment>
+  </data>
+  <data name="Add" xml:space="preserve">
+      <value>Add</value>
+      <comment>Add</comment>
+  </data>
 </root>

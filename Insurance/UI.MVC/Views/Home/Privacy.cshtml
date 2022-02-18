@@ -1,7 +1,19 @@
+@using System.Globalization
+@using System.Threading
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
 @{
-    ViewData["Title"] = "Privacy Policy";
+    ViewData["Title"] = @_localizer["Privacy Policy"];
 }
-<h1 style="color: darkviolet;">@ViewData["Title"]</h1>
+@{
+    if (Thread.CurrentThread.CurrentUICulture.Equals (new CultureInfo ("en-US"))) {
+        <h1 style="color: darkviolet">@ViewData["Title"]</h1>
 
-<p style="color: darkviolet;">Never trust a website with purple terms and conditions.</p>
-<spoiler style="color: darkviolet;">They clearly violet your privacy.</spoiler>
+        <p style="color: darkviolet">Never trust a website with purple terms and conditions.</p>
+        <spoiler style="color: darkviolet">They clearly violet your privacy.</spoiler>
+    } else {
+        <h1>@ViewData["Title"]</h1>
+
+        <p >@_localizer["Never trust a website with purple terms and conditions."]</p>
+    }
+}

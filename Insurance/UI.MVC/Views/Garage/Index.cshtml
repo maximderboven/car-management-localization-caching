@@ -1,26 +1,28 @@
-﻿@model IEnumerable<Insurance.Domain.Garage>
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@model IEnumerable<Insurance.Domain.Garage>
 
 @{
-    ViewBag.Title = "Garages";
+    ViewBag.Title = @_localizer["Garages"];
     Layout = "_Layout";
 }
 
 <!-- Titel -->
-<h2>All Garages</h2>
+<h2>@_localizer["All Garages"]</h2>
 <!-- tabel -->
 <table id="garages" class="table">
     <thead class="thead-light">
     <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Adress</th>
-        <th scope="col">Telnr</th>
+        <th scope="col">@_localizer["Name"]</th>
+        <th scope="col">@_localizer["Address"]</th>
+        <th scope="col">@_localizer["Telnr"]</th>
         <th scope="col"></th>
     </tr>
     </thead>
     <tbody>
     </tbody>
 </table>
-<button type="button" class="btn btn-primary" id="loadGarages">Refresh garages list</button>
+<button type="button" class="btn btn-primary" id="loadGarages">@_localizer["Refresh garages list"]</button>
 
 @section Scripts {
     <script src="~/js/garage/index.js" defer></script>

@@ -1,7 +1,7 @@
 ﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer _localizer
 
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = @_localizer["Home Page"];
 }
 
 <main role="main" class="container">
@@ -20,7 +20,7 @@
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <strong class="text-gray-dark">@_localizer["View all cars."]</strong>
-                    <a asp-controller="Car">View</a>
+                    <a asp-controller="Car">@_localizer["View"]</a>
                 </div>
                 <span class="d-block"></span>
             </div>
@@ -30,7 +30,7 @@
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <strong class="text-gray-dark">@_localizer["Add a new car."]</strong>
-                    <a asp-controller="Car" asp-action="Add">Add</a>
+                    <a asp-controller="Car" asp-action="Add">@_localizer["Add"]</a>
                 </div>
                 <span class="d-block"></span>
             </div>
@@ -40,7 +40,7 @@
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <strong class="text-gray-dark">@_localizer["Edit and view all garages"]</strong>
-                    <a asp-controller="Garage">View</a>
+                    <a asp-controller="Garage">@_localizer["View"]</a>
                 </div>
                 <span class="d-block"></span>
             </div>
@@ -50,7 +50,7 @@
             <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
                 <div class="d-flex justify-content-between align-items-center w-100">
                     <strong class="text-gray-dark">@_localizer["We take your privacy serious."]</strong>
-                    <a asp-controller="Home" asp-action="Privacy">View</a>
+                    <a asp-controller="Home" asp-action="Privacy">@_localizer["View"]</a>
                 </div>
                 <span class="d-block"></span>
             </div>

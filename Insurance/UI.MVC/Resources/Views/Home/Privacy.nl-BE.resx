@@ -117,31 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Car Management" xml:space="preserve">
-    <value>Auto beheer</value>
+  <data name="Never trust a website with purple terms and conditions." xml:space="preserve">
+    <value>Ik weet je huis wonen</value>
+    <comment>Never trust a website with purple terms and conditions.</comment>
   </data>
-  <data name="View all cars." xml:space="preserve">
-    <value>Bekijk alle auto's.</value>
-  </data>
-  <data name="Add a new car." xml:space="preserve">
-    <value>Voeg een auto toe</value>
-  </data>
-  <data name="Edit and view all garages" xml:space="preserve">
-    <value>Bewerk en bekijk alle garages.</value>
-  </data>
-  <data name="We take your privacy serious." xml:space="preserve">
-    <value>Wij nenem u privacy serieus.</value>
-  </data>
-  <data name="Home Page" xml:space="preserve">
-    <value>Home Page</value>
-    <comment>Home Page</comment>
-  </data>
-  <data name="View" xml:space="preserve">
-    <value>Bekijk</value>
-    <comment>View</comment>
-  </data>
-  <data name="Add" xml:space="preserve">
-    <value>Voeg toe</value>
-    <comment>Add</comment>
+  <data name="Privacy Policy" xml:space="preserve">
+    <value>Privacybeleid</value>
+    <comment>Privacy Policy</comment>
   </data>
 </root>

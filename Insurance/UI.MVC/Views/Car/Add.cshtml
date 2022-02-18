@@ -1,4 +1,10 @@
-﻿@using Insurance.Domain
+﻿@using System.Globalization
+@using System.Threading
+@using Distances
+@using Insurance.Domain
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
+@inject IDistanceLocalizer _distLocalizer
 @model UI.MVC.Models.CarViewModel
 @{
     ViewBag.Title = "title";
@@ -7,38 +13,38 @@
     List<Garage> garages = (List<Garage>) ViewData["garages"];
 }
 
-<h2>Add a Car</h2>
+<h2>@_localizer["Add a Car"]</h2>
 
 <form asp-controller="Car" asp-action="Add" method="post">
     <div class="form-group">
-        <label asp-for="Fuel">Fuel</label>
+        <label asp-for="Fuel">@_localizer["Fuel"]</label>
         <select asp-for="Fuel" asp-items="@Html.GetEnumSelectList<Fuel>()" class="form-control">
         </select>
         <span asp-validation-for="Fuel" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Brand">Brand</label>
+        <label asp-for="Brand">@_localizer["Brand"]</label>
         <input asp-for="Brand" class="form-control" type="text"/>
         <span asp-validation-for="Brand" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Mileage">Mileage (Double)</label>
+        <label asp-for="Mileage">@_localizer["Mileage"] (@_distLocalizer.GetSymbol(DistanceUnit.Kilometers, DistanceUnit.Miles))</label>
         <!--  asp-is-invariant="true" is voor de komma en punt regio (werkt alsnog niet)-->
         <input asp-for="Mileage" type="number" step="0.01"  class="form-control"/>
         <span asp-validation-for="Mileage" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Seats">Amount of Seats</label>
+        <label asp-for="Seats">@_localizer["Amount of Seats"]</label>
         <input type="number" asp-for="Seats" min="1" max="8"/>
         <span asp-validation-for="Seats" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="PurchasePrice">Purchase Price</label>
+        <label asp-for="PurchasePrice">@_localizer["Purchase Price"] (@Thread.CurrentThread.CurrentUICulture.NumberFormat.CurrencySymbol)</label>
         <input type="number" asp-for="PurchasePrice"/>
         <span asp-validation-for="PurchasePrice" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Garage">Garage</label>
+        <label asp-for="Garage">@_localizer["Garage"]</label>
         <select asp-for="Garage" class="form-control">
             <!-- https://stackoverflow.com/questions/58958881/how-to-make-form-input-for-list-of-objects -->
             <!-- Of mijn methode :)) -->

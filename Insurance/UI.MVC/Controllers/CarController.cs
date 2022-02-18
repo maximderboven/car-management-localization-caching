@@ -1,4 +1,6 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using Distances;
 using Insurance.BL;
 using Microsoft.AspNetCore.Mvc;
 using UI.MVC.Models;
@@ -8,10 +10,14 @@ namespace UI.MVC.Controllers
     public class CarController : Controller
     {
         private readonly IManager _manager;
+        private readonly IDistanceLocalizer _distLocalizer;
+        private readonly IDoubleParser _doubleParser;
 
-        public CarController(IManager manager)
+        public CarController(IManager manager, IDistanceLocalizer localizer, IDoubleParser doubleParse)
         {
             _manager = manager;
+            _distLocalizer = localizer;
+            _doubleParser = doubleParse;
         }
 
         [HttpGet]
@@ -42,8 +48,12 @@ namespace UI.MVC.Controllers
                 ViewData["garages"] = _manager.GetAllGarages().ToList();
                 return View();
             }
-            //Hij pakt de Mileage niet goed omdat er een foute omzetting gebeurd door regio: , & .
-            var car = _manager.AddCar(cvm.PurchasePrice, cvm.Brand, cvm.Fuel, cvm.Seats, cvm.Mileage,
+
+            double distance = _doubleParser.Parse (cvm.Mileage);
+            double mileage = _distLocalizer.Delocalize (distance, DistanceUnit.Miles, DistanceUnit.Kilometers);
+            mileage = Math.Round (mileage, 2);
+
+            var car = _manager.AddCar(cvm.PurchasePrice, cvm.Brand, cvm.Fuel, cvm.Seats, mileage,
                 _manager.GetGarage(cvm.Garage));
             return RedirectToAction("Details", "Car", new {numberplate = car.NumberPlate});
         }

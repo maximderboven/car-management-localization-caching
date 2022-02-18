@@ -1,61 +1,66 @@
 ﻿@using Insurance.Domain
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer _localizer
 @model Car
 
 @{
-    ViewBag.Title = "Car Details";
+    ViewBag.Title = _localizer["Car Details"];
     Layout = "_Layout";
 }
 
-<h2>Car Details</h2>
+<h2>@_localizer["Car Details"]</h2>
 <table>
     <tr>
-        <th>Brand</th><td>@Model.Brand</td>
+        <th>@_localizer["Brand"]</th>
+        <td>@Model.Brand</td>
     </tr>
     <tr>
-        <th>Fuel</th><td>@Model.Fuel</td>
+        <th>@_localizer["Fuel"]</th>
+        <td>@Model.Fuel</td>
     </tr>
     <tr>
-        <th>Seats</th><td>@Model.Seats</td>
+        <th>@_localizer["Seats"]</th>
+        <td>@Model.Seats</td>
     </tr>
     <tr>
-        <th>Mileage</th><td>@Model.Mileage</td>
+        <th>@_localizer["Mileage"]</th>
+        <td>@Model.Mileage</td>
     </tr>
     <tr>
-        <th>Purchaseprice</th>
+        <th>@_localizer["Purchaseprice"]</th>
         @{
-            var PurchasePrice = Model.PurchasePrice != null ? Model.PurchasePrice.ToString() : "Not Known";
+            var purchasePrice = Model.PurchasePrice != null ? ((double)Model.PurchasePrice).ToString ("c") : @_localizer["Not Known"].ToString ();
         }
-        <td>@PurchasePrice</td>
+        <td>@purchasePrice</td>
     </tr>
 </table>
 
-<h3>Drivers / Rentals for this car</h3>
+<h3>@_localizer["Drivers / Rentals for this car"]</h3>
 
 <table class="table">
     <thead class="thead-light">
-    <tr>
-        <th scope="col">Name</th>
-        <th scope="col">Date Of Birth</th>
-        <th scope="col">Rent Price</th>
-        <th scope="col">Total Days</th>
-        <th scope="col"></th>
-    </tr>
+        <tr>
+            <th scope="col">@_localizer["Name"]</th>
+            <th scope="col">@_localizer["Date Of Birth"]</th>
+            <th scope="col">@_localizer["Rent Price"]</th>
+            <th scope="col">@_localizer["Total Days"]</th>
+            <th scope="col"></th>
+        </tr>
     </thead>
     <tbody>
-    @foreach (Rental r in Model.Rentals)
-    {
-        <tr>
-            <td>@r.Driver.FirstName @r.Driver.LastName</td>
-            <td>@r.Driver.DateOfBirth.ToString("dd/MM/yyyy")</td>
-            <td>@Math.Round(r.Price,2)</td>
-            @{
-                var d = (r.EndDate.Date - r.StartDate.Date).TotalDays;
-            }
-            <td>@d</td>
-            <td>
-                <a asp-controller="Driver" asp-action="Details" asp-route-socialnumber="@r.Driver.SocialNumber">Details</a>
-            </td>
-        </tr>
-    }
+        @foreach (Rental r in Model.Rentals) {
+            <tr>
+                <td>@r.Driver.FirstName @r.Driver.LastName</td>
+                <td>@r.Driver.DateOfBirth.ToShortDateString()</td>
+                <td>@Math.Round(r.Price,2)</td>
+                @{
+                    var d = (r.EndDate.Date - r.StartDate.Date).TotalDays;
+                }
+                <td>@d</td>
+                <td>
+                    <a asp-controller="Driver" asp-action="Details" asp-route-socialnumber="@r.Driver.SocialNumber">@_localizer["Details"].Value</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

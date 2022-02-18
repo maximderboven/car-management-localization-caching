@@ -117,31 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Car Management" xml:space="preserve">
-    <value>Auto beheer</value>
+  <data name="Car Details" xml:space="preserve">
+    <value>Auto Details</value>
+    <comment>Car Details</comment>
   </data>
-  <data name="View all cars." xml:space="preserve">
-    <value>Bekijk alle auto's.</value>
+  <data name="Brand" xml:space="preserve">
+    <value>Merk</value>
+    <comment>Brand</comment>
   </data>
-  <data name="Add a new car." xml:space="preserve">
-    <value>Voeg een auto toe</value>
+  <data name="Fuel" xml:space="preserve">
+    <value>Brandstof</value>
+    <comment>Fuel</comment>
   </data>
-  <data name="Edit and view all garages" xml:space="preserve">
-    <value>Bewerk en bekijk alle garages.</value>
+  <data name="Seats" xml:space="preserve">
+    <value>Zetels</value>
+    <comment>Seats</comment>
   </data>
-  <data name="We take your privacy serious." xml:space="preserve">
-    <value>Wij nenem u privacy serieus.</value>
+  <data name="Mileage" xml:space="preserve">
+    <value>Kilometerstand</value>
+    <comment>Mileage</comment>
   </data>
-  <data name="Home Page" xml:space="preserve">
-    <value>Home Page</value>
-    <comment>Home Page</comment>
+  <data name="Purchaseprice" xml:space="preserve">
+    <value>Aankoopprijs</value>
+    <comment>Purchaseprice</comment>
   </data>
-  <data name="View" xml:space="preserve">
-    <value>Bekijk</value>
-    <comment>View</comment>
+  <data name="Drivers / Rentals for this car" xml:space="preserve">
+    <value>Bestuurder / Verhuren voor deze auto</value>
+    <comment>Drivers / Rentals for this car</comment>
   </data>
-  <data name="Add" xml:space="preserve">
-    <value>Voeg toe</value>
-    <comment>Add</comment>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+    <comment>Name</comment>
+  </data>
+  <data name="Date Of Birth" xml:space="preserve">
+    <value>Geboortedatum</value>
+    <comment>Date Of Birth</comment>
+  </data>
+  <data name="Rent Price" xml:space="preserve">
+    <value>Huurprijs</value>
+    <comment>Rent Price</comment>
+  </data>
+  <data name="Total Days" xml:space="preserve">
+    <value>Totale dagen</value>
+    <comment>Total Days</comment>
+  </data>
+  <data name="Not Known" xml:space="preserve">
+    <value>Onbekend</value>
+    <comment>Not Known</comment>
+  </data>
+  <data name="Details" xml:space="preserve">
+      <value>Details</value>
+      <comment>Details</comment>
   </data>
 </root>

@@ -43,6 +43,7 @@ namespace UI.MVC {
 
 
             services.AddScoped<IDistanceLocalizer, DistanceLocalizer> ();
+            services.AddScoped<IDoubleParser, DoubleParser> ();
 
             // Old dependency injection
             services.AddDbContext<InsuranceDbContext> ();

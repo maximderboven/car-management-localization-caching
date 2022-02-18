@@ -117,31 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Car Management" xml:space="preserve">
-    <value>Auto beheer</value>
+  <data name="Name" xml:space="preserve">
+    <value>Naam</value>
+    <comment>Name</comment>
   </data>
-  <data name="View all cars." xml:space="preserve">
-    <value>Bekijk alle auto's.</value>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+    <comment>Address</comment>
   </data>
-  <data name="Add a new car." xml:space="preserve">
-    <value>Voeg een auto toe</value>
+  <data name="Telnr" xml:space="preserve">
+    <value>Telnr</value>
+    <comment>Telnr</comment>
   </data>
-  <data name="Edit and view all garages" xml:space="preserve">
-    <value>Bewerk en bekijk alle garages.</value>
+  <data name="Refresh garages list" xml:space="preserve">
+    <value>Vernieuw garage lijst</value>
+    <comment>Refresh garages list</comment>
   </data>
-  <data name="We take your privacy serious." xml:space="preserve">
-    <value>Wij nenem u privacy serieus.</value>
+  <data name="All Garages" xml:space="preserve">
+    <value>Alle garages</value>
+    <comment>All Garages</comment>
   </data>
-  <data name="Home Page" xml:space="preserve">
-    <value>Home Page</value>
-    <comment>Home Page</comment>
-  </data>
-  <data name="View" xml:space="preserve">
-    <value>Bekijk</value>
-    <comment>View</comment>
-  </data>
-  <data name="Add" xml:space="preserve">
-    <value>Voeg toe</value>
-    <comment>Add</comment>
+  <data name="Garages" xml:space="preserve">
+    <value>Garages</value>
+    <comment>Garages</comment>
   </data>
 </root>

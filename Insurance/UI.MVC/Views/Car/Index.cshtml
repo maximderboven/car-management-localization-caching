@@ -1,21 +1,23 @@
-﻿@model IEnumerable<Insurance.Domain.Car>
+﻿@inject IViewLocalizer _localizer
+@using Microsoft.AspNetCore.Mvc.Localization
+@model IEnumerable<Insurance.Domain.Car>
 
 @{
-    ViewBag.Title = "All Cars";
+    ViewBag.Title = _localizer["All Cars"];
     Layout = "_Layout";
 }
 
 <!-- Titel -->
-<h2>All Cars</h2>
+<h2>@_localizer["All Cars"]</h2>
 <!-- tabel -->
 <table class="table">
     <thead class="thead-light">
     <tr>
-        <th scope="col">Brand</th>
-        <th scope="col">Fuel</th>
-        <th scope="col">Seats</th>
-        <th scope="col">Miles</th>
-        <th scope="col">Purchaseprice</th>
+        <th scope="col">@_localizer["Brand"]</th>
+        <th scope="col">@_localizer["Fuel"]</th>
+        <th scope="col">@_localizer["Seats"]</th>
+        <th scope="col">@_localizer["Miles"]</th>
+        <th scope="col">@_localizer["Purchaseprice"]</th>
         <th scope="col"></th>
     </tr>
     </thead>
@@ -29,11 +31,11 @@
             <td>@car.Seats</td>
             <td>@car.Mileage</td>
             @{
-                var PurchasePrice = car.PurchasePrice != null ? car.PurchasePrice.ToString() : "Not Known";
+                var purchasePrice = car.PurchasePrice != null ? ((double)car.PurchasePrice).ToString ("c") : @_localizer["Not Known"].Value;
             }
-            <td>@PurchasePrice</td>
+            <td>@purchasePrice</td>
             <td>
-                <a asp-controller="Car" asp-action="Details" asp-route-numberplate="@car.NumberPlate">Details</a>
+                <a asp-controller="Car" asp-action="Details" asp-route-numberplate="@car.NumberPlate">@_localizer["Details"]</a>
             </td>
         </tr>
     }

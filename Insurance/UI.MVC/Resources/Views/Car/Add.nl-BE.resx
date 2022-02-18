@@ -117,31 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Car Management" xml:space="preserve">
-    <value>Auto beheer</value>
+  <data name="Garage" xml:space="preserve">
+    <value>Garage</value>
+    <comment>Garage</comment>
   </data>
-  <data name="View all cars." xml:space="preserve">
-    <value>Bekijk alle auto's.</value>
+  <data name="Purchase Price" xml:space="preserve">
+    <value>Aankoopprijs</value>
+    <comment>Purchase Price</comment>
   </data>
-  <data name="Add a new car." xml:space="preserve">
+  <data name="Amount of Seats" xml:space="preserve">
+    <value>Hoeveelheid zetels</value>
+    <comment>Amount of Seats</comment>
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value>Kilometerstand</value>
+    <comment>Mileage</comment>
+  </data>
+  <data name="Brand" xml:space="preserve">
+    <value>Merk</value>
+    <comment>Brand</comment>
+  </data>
+  <data name="Fuel" xml:space="preserve">
+    <value>Brandstof</value>
+    <comment>Fuel</comment>
+  </data>
+  <data name="Add a Car" xml:space="preserve">
     <value>Voeg een auto toe</value>
-  </data>
-  <data name="Edit and view all garages" xml:space="preserve">
-    <value>Bewerk en bekijk alle garages.</value>
-  </data>
-  <data name="We take your privacy serious." xml:space="preserve">
-    <value>Wij nenem u privacy serieus.</value>
-  </data>
-  <data name="Home Page" xml:space="preserve">
-    <value>Home Page</value>
-    <comment>Home Page</comment>
-  </data>
-  <data name="View" xml:space="preserve">
-    <value>Bekijk</value>
-    <comment>View</comment>
-  </data>
-  <data name="Add" xml:space="preserve">
-    <value>Voeg toe</value>
-    <comment>Add</comment>
+    <comment>Add a Car</comment>
   </data>
 </root>
