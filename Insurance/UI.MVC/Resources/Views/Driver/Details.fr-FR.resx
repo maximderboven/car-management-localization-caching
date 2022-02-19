@@ -98,72 +98,72 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-    <data name="Drivers" xml:space="preserve">
-        <value>Drivers</value>
-        <comment>Drivers</comment>
-    </data>
-    <data name="Full Name" xml:space="preserve">
-        <value>Full Name</value>
-        <comment>Full Name</comment>
-    </data>
-    <data name="Social Number" xml:space="preserve">
-        <value>Social Number</value>
-        <comment>Social Number</comment>
-    </data>
-    <data name="Date of Birth" xml:space="preserve">
-        <value>Date of Birth</value>
-        <comment>Date of Birth</comment>
-    </data>
-    <data name="Cars for this Driver" xml:space="preserve">
-        <value>Cars for this Driver</value>
-        <comment>Cars for this Driver</comment>
-    </data>
-    <data name="Brand" xml:space="preserve">
-        <value>Brand</value>
-        <comment>Brand</comment>
-    </data>
-    <data name="Fuel" xml:space="preserve">
-        <value>Fuel</value>
-        <comment>Fuel</comment>
-    </data>
-    <data name="Purchaseprice" xml:space="preserve">
-        <value>Purchaseprice</value>
-        <comment>Purchaseprice</comment>
-    </data>
-    <data name="Seats" xml:space="preserve">
-        <value>Seats</value>
-        <comment>Seats</comment>
-    </data>
+	<data name="Drivers" xml:space="preserve">
+		<value>Pilotes</value>
+		<comment>Drivers</comment>
+	</data>
+	<data name="Full Name" xml:space="preserve">
+		<value>Nom complet</value>
+		<comment>Full Name</comment>
+	</data>
+	<data name="Social Number" xml:space="preserve">
+		<value>Numéro social</value>
+		<comment>Social Number</comment>
+	</data>
+	<data name="Date of Birth" xml:space="preserve">
+		<value>Date de naissance</value>
+		<comment>Date of Birth</comment>
+	</data>
+	<data name="Cars for this Driver" xml:space="preserve">
+		<value>Voitures pour ce conducteur</value>
+		<comment>Cars for this Driver</comment>
+	</data>
+	<data name="Brand" xml:space="preserve">
+		<value>Marque</value>
+		<comment>Brand</comment>
+	</data>
+	<data name="Fuel" xml:space="preserve">
+		<value>Carburant</value>
+		<comment>Fuel</comment>
+	</data>
+	<data name="Purchaseprice" xml:space="preserve">
+		<value>Prix d'achat</value>
+		<comment>Purchaseprice</comment>
+	</data>
+	<data name="Seats" xml:space="preserve">
+		<value>Sièges</value>
+		<comment>Seats</comment>
+	</data>
     <data name="Miles" xml:space="preserve">
         <value>Miles</value>
         <comment>Miles</comment>
     </data>
-    <data name="Add Car" xml:space="preserve">
-        <value>Add Car</value>
-        <comment>Add Car</comment>
-    </data>
-    <data name="Car" xml:space="preserve">
-        <value>Car</value>
-        <comment>Car</comment>
-    </data>
-    <data name="Price" xml:space="preserve">
-        <value>Price</value>
-        <comment>Price</comment>
-    </data>
-    <data name="From" xml:space="preserve">
-        <value>From</value>
-        <comment>From</comment>
-    </data>
-    <data name="Until" xml:space="preserve">
-        <value>Until</value>
-        <comment>Until</comment>
-    </data>
-    <data name="added new rental succesfully." xml:space="preserve">
-        <value>added new rental succesfully.</value>
-        <comment>added new rental succesfully.</comment>
-    </data>
-    <data name="Wrong data given." xml:space="preserve">
-        <value>Wrong data given.</value>
-        <comment>Wrong data given.</comment>
-    </data>
+	<data name="Add Car" xml:space="preserve">
+		<value>Ajouter une voiture</value>
+		<comment>Add Car</comment>
+	</data>
+	<data name="Car" xml:space="preserve">
+		<value>Voiture</value>
+		<comment>Car</comment>
+	</data>
+	<data name="Price" xml:space="preserve">
+		<value>Prix</value>
+		<comment>Price</comment>
+	</data>
+	<data name="From" xml:space="preserve">
+		<value>De</value>
+		<comment>From</comment>
+	</data>
+	<data name="Until" xml:space="preserve">
+		<value>Jusqu'à</value>
+		<comment>Until</comment>
+	</data>
+	<data name="added new rental succesfully." xml:space="preserve">
+		<value>ajout d'une nouvelle location avec succès.</value>
+		<comment>added new rental succesfully.</comment>
+	</data>
+	<data name="Wrong data given." xml:space="preserve">
+		<value>Données erronées.</value>
+		<comment>Wrong data given.</comment>
+	</data>
 </root>

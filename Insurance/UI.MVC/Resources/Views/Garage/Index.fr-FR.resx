@@ -98,26 +98,26 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-    <data name="Name" xml:space="preserve">
-        <value>Name</value>
-        <comment>Name</comment>
-    </data>
-    <data name="Address" xml:space="preserve">
-        <value>Address</value>
-        <comment>Address</comment>
-    </data>
+	<data name="Name" xml:space="preserve">
+		<value>Nom</value>
+		<comment>Name</comment>
+	</data>
+	<data name="Address" xml:space="preserve">
+		<value>Adresse</value>
+		<comment>Address</comment>
+	</data>
     <data name="Telnr" xml:space="preserve">
         <value>Telnr</value>
         <comment>Telnr</comment>
     </data>
-    <data name="Refresh garages list" xml:space="preserve">
-        <value>Refresh garages list</value>
-        <comment>Refresh garages list</comment>
-    </data>
-    <data name="All Garages" xml:space="preserve">
-        <value>All Garages</value>
-        <comment>All Garages</comment>
-    </data>
+	<data name="Refresh garages list" xml:space="preserve">
+		<value>Rafraîchir la liste des garages</value>
+		<comment>Refresh garages list</comment>
+	</data>
+	<data name="All Garages" xml:space="preserve">
+		<value>Tous les garages</value>
+		<comment>All Garages</comment>
+	</data>
     <data name="Garages" xml:space="preserve">
         <value>Garages</value>
         <comment>Garages</comment>

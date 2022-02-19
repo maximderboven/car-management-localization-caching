@@ -98,32 +98,32 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-    <data name="Garage" xml:space="preserve">
-        <value>Garage</value>
-        <comment>Garage</comment>
-    </data>
-    <data name="Purchase Price" xml:space="preserve">
-        <value>Purchase Price</value>
-        <comment>Purchase Price</comment>
-    </data>
-    <data name="Amount of Seats" xml:space="preserve">
-        <value>Amount of Seats</value>
-        <comment>Amount of Seats</comment>
-    </data>
-    <data name="Mileage" xml:space="preserve">
-        <value>Mileage</value>
-        <comment>Mileage</comment>
-    </data>
-    <data name="Brand" xml:space="preserve">
-        <value>Brand</value>
-        <comment>Brand</comment>
-    </data>
-    <data name="Fuel" xml:space="preserve">
-        <value>Fuel</value>
-        <comment>Fuel</comment>
-    </data>
-    <data name="Add a Car" xml:space="preserve">
-        <value>Add a Car</value>
-        <comment>Add a Car</comment>
-    </data>
+	<data name="Garage" xml:space="preserve">
+		<value>Garage</value>
+		<comment>Garage</comment>
+	</data>
+	<data name="Purchase Price" xml:space="preserve">
+		<value>Prix d'achat</value>
+		<comment>Purchase Price</comment>
+	</data>
+	<data name="Amount of Seats" xml:space="preserve">
+		<value>Nombre de sièges</value>
+		<comment>Amount of Seats</comment>
+	</data>
+	<data name="Mileage" xml:space="preserve">
+		<value>Kilométrage</value>
+		<comment>Mileage</comment>
+	</data>
+	<data name="Brand" xml:space="preserve">
+		<value>Marque</value>
+		<comment>Brand</comment>
+	</data>
+	<data name="Fuel" xml:space="preserve">
+		<value>Carburant</value>
+		<comment>Fuel</comment>
+	</data>
+	<data name="Add a Car" xml:space="preserve">
+		<value>Ajouter une voiture</value>
+		<comment>Add a Car</comment>
+	</data>
 </root>

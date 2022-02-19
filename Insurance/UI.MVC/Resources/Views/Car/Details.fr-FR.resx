@@ -98,56 +98,56 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-    <data name="Car Details" xml:space="preserve">
-        <value>Car Details</value>
-        <comment>Car Details</comment>
-    </data>
-    <data name="Brand" xml:space="preserve">
-        <value>Brand</value>
-        <comment>Brand</comment>
-    </data>
-    <data name="Fuel" xml:space="preserve">
-        <value>Fuel</value>
-        <comment>Fuel</comment>
-    </data>
-    <data name="Seats" xml:space="preserve">
-        <value>Seats</value>
-        <comment>Seats</comment>
-    </data>
-    <data name="Mileage" xml:space="preserve">
-        <value>Mileage</value>
-        <comment>Mileage</comment>
-    </data>
-    <data name="Purchaseprice" xml:space="preserve">
-        <value>Purchaseprice</value>
-        <comment>Purchaseprice</comment>
-    </data>
-    <data name="Drivers / Rentals for this car" xml:space="preserve">
-        <value>Drivers / Rentals for this car</value>
-        <comment>Drivers / Rentals for this car</comment>
-    </data>
-    <data name="Name" xml:space="preserve">
-        <value>Name</value>
-        <comment>Name</comment>
-    </data>
-    <data name="Date Of Birth" xml:space="preserve">
-        <value>Date Of Birth</value>
-        <comment>Date Of Birth</comment>
-    </data>
-    <data name="Rent Price" xml:space="preserve">
-        <value>Rent Price</value>
-        <comment>Rent Price</comment>
-    </data>
-    <data name="Total Days" xml:space="preserve">
-        <value>Total Days</value>
-        <comment>Total Days</comment>
-    </data>
-    <data name="Not Known" xml:space="preserve">
-        <value>Not Known</value>
-        <comment>Not Known</comment>
-    </data>
-    <data name="Details" xml:space="preserve">
-        <value>Details</value>
-        <comment>Details</comment>
-    </data>
+	<data name="Car Details" xml:space="preserve">
+		<value>Détails de la voiture</value>
+		<comment>Car Details</comment>
+	</data>
+	<data name="Brand" xml:space="preserve">
+		<value>Marque</value>
+		<comment>Brand</comment>
+	</data>
+	<data name="Fuel" xml:space="preserve">
+		<value>Carburant</value>
+		<comment>Fuel</comment>
+	</data>
+	<data name="Seats" xml:space="preserve">
+		<value>Sièges</value>
+		<comment>Seats</comment>
+	</data>
+	<data name="Mileage" xml:space="preserve">
+		<value>Kilométrage</value>
+		<comment>Mileage</comment>
+	</data>
+	<data name="Purchaseprice" xml:space="preserve">
+		<value>Prix d'achat</value>
+		<comment>Purchaseprice</comment>
+	</data>
+	<data name="Drivers / Rentals for this car" xml:space="preserve">
+		<value>Conducteurs / Locations pour cette voiture</value>
+		<comment>Drivers / Rentals for this car</comment>
+	</data>
+	<data name="Name" xml:space="preserve">
+		<value>Nom</value>
+		<comment>Name</comment>
+	</data>
+	<data name="Date Of Birth" xml:space="preserve">
+		<value>Date de naissance</value>
+		<comment>Date Of Birth</comment>
+	</data>
+	<data name="Rent Price" xml:space="preserve">
+		<value>Prix du loyer</value>
+		<comment>Rent Price</comment>
+	</data>
+	<data name="Total Days" xml:space="preserve">
+		<value>Nombre total de jours</value>
+		<comment>Total Days</comment>
+	</data>
+	<data name="Not Known" xml:space="preserve">
+		<value>Non connu</value>
+		<comment>Not Known</comment>
+	</data>
+	<data name="Details" xml:space="preserve">
+		<value>Détails</value>
+		<comment>Details</comment>
+	</data>
 </root>

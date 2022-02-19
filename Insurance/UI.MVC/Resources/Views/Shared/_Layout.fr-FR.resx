@@ -118,23 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Car Management" xml:space="preserve">
-      <value>Car Management</value>
-      <comment>Car Management</comment>
+    <value>Gestion des voitures</value>
+    <comment>Car Management</comment>
   </data>
   <data name="Home" xml:space="preserve">
-      <value>Home</value>
-      <comment>Home</comment>
+    <value>Accueil</value>
+    <comment>Home</comment>
   </data>
   <data name="Add Car" xml:space="preserve">
-      <value>Add Car</value>
-      <comment>Add Car</comment>
+    <value>Ajouter une voiture</value>
+    <comment>Add Car</comment>
   </data>
   <data name="Garages" xml:space="preserve">
       <value>Garages</value>
       <comment>Garages</comment>
   </data>
   <data name="Privacy" xml:space="preserve">
-      <value>Privacy</value>
-      <comment>Privacy</comment>
+    <value>Vie privée</value>
+    <comment>Privacy</comment>
   </data>
 </root>

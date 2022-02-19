@@ -98,40 +98,40 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-    <data name="Details" xml:space="preserve">
-        <value>Details</value>
-        <comment>Details</comment>
-    </data>
-    <data name="Garage Details" xml:space="preserve">
-        <value>Garage Details</value>
-        <comment>Garage Details</comment>
-    </data>
+	<data name="Details" xml:space="preserve">
+		<value>Détails</value>
+		<comment>Details</comment>
+	</data>
+	<data name="Garage Details" xml:space="preserve">
+		<value>Détails du garage</value>
+		<comment>Garage Details</comment>
+	</data>
     <data name="Id" xml:space="preserve">
         <value>Id</value>
         <comment>Id</comment>
     </data>
-    <data name="Name" xml:space="preserve">
-        <value>Name</value>
-        <comment>Name</comment>
-    </data>
+	<data name="Name" xml:space="preserve">
+		<value>Nom</value>
+		<comment>Name</comment>
+	</data>
     <data name="Telnr" xml:space="preserve">
         <value>Telnr</value>
         <comment>Telnr</comment>
     </data>
-    <data name="Address" xml:space="preserve">
-        <value>Address</value>
-        <comment>Address</comment>
-    </data>
-    <data name="Edit" xml:space="preserve">
-        <value>Edit</value>
-        <comment>Edit</comment>
-    </data>
-    <data name="Edited garages succesfully." xml:space="preserve">
-        <value>Edited garages succesfully.</value>
-        <comment>Edited garages succesfully.</comment>
-    </data>
-    <data name="Wrong data given." xml:space="preserve">
-        <value>Wrong data given.</value>
-        <comment>Wrong data given.</comment>
-    </data>
+	<data name="Address" xml:space="preserve">
+		<value>Adresse</value>
+		<comment>Address</comment>
+	</data>
+	<data name="Edit" xml:space="preserve">
+		<value>Modifier</value>
+		<comment>Edit</comment>
+	</data>
+	<data name="Edited garages succesfully." xml:space="preserve">
+		<value>Des garages édités avec succès.</value>
+		<comment>Edited garages succesfully.</comment>
+	</data>
+	<data name="Wrong data given." xml:space="preserve">
+		<value>Données erronées.</value>
+		<comment>Wrong data given.</comment>
+	</data>
 </root>

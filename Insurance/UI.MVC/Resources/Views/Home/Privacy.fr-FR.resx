@@ -98,12 +98,12 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
-    <data name="Never trust a website with purple terms and conditions." xml:space="preserve">
-        <value>Never trust a website with purple terms and conditions.</value>
-        <comment>Never trust a website with purple terms and conditions.</comment>
-    </data>
-    <data name="Privacy Policy" xml:space="preserve">
-        <value>Privacy Policy</value>
-        <comment>Privacy Policy</comment>
-    </data>
+	<data name="Never trust a website with purple terms and conditions." xml:space="preserve">
+		<value>Ne faites jamais confiance à un site web dont les termes et conditions sont violets.</value>
+		<comment>Never trust a website with purple terms and conditions.</comment>
+	</data>
+	<data name="Privacy Policy" xml:space="preserve">
+		<value>Politique de confidentialité</value>
+		<comment>Privacy Policy</comment>
+	</data>
 </root>

@@ -121,27 +121,27 @@
     <value>Gestion des voitures</value>
   </data>
   <data name="View all cars." xml:space="preserve">
-    <value>View all cars.</value>
+    <value>Voir toutes les voitures.</value>
   </data>
   <data name="Add a new car." xml:space="preserve">
-    <value>Add a new car.</value>
+    <value>Ajouter une nouvelle voiture.</value>
   </data>
   <data name="Edit and view all garages" xml:space="preserve">
-    <value>Edit and view all garages</value>
+    <value>Modifier et visualiser tous les garages</value>
   </data>
   <data name="We take your privacy serious." xml:space="preserve">
-    <value>We take your privacy serious.</value>
+    <value>Nous prenons votre vie privée au sérieux.</value>
   </data>
   <data name="Home Page" xml:space="preserve">
-      <value>Home Page</value>
-      <comment>Home Page</comment>
+    <value>Page d'accueil</value>
+    <comment>Home Page</comment>
   </data>
   <data name="View" xml:space="preserve">
-      <value>View</value>
-      <comment>View</comment>
+    <value>Voir</value>
+    <comment>View</comment>
   </data>
   <data name="Add" xml:space="preserve">
-      <value>Add</value>
-      <comment>Add</comment>
+    <value>Ajouter</value>
+    <comment>Add</comment>
   </data>
 </root>
