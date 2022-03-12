@@ -21,6 +21,7 @@ namespace UI.MVC.Controllers
         }
 
         [HttpGet]
+        [ResponseCache(Duration = 10, Location = ResponseCacheLocation.Any, NoStore = false)]
         public IActionResult Index()
         {
             return View(_manager.GetAllCars());
@@ -34,6 +35,7 @@ namespace UI.MVC.Controllers
         }
 
         [HttpGet]
+        [ResponseCache(Duration = 30, Location = ResponseCacheLocation.Any, NoStore = false, VaryByHeader = "id")]
         public IActionResult Details(int numberplate)
         {
             //ViewBag.drivers = _manager.GetDriversOfCar(numberplate);

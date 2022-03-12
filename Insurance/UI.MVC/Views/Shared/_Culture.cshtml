@@ -10,8 +10,11 @@
     .ToList ();
 }
 
+
+//Hierdoor errort die met een AntiForgery Protection
 <div>
     <form asp-action="CultureManagement" asp-controller="Home" method="post" asp-route-returnUrl="@returnUrl">
         <select name="culture" asp-for="@culture.RequestCulture.UICulture.Name" asp-items="cultureList" onchange="this.form.submit ();"></select>
+        @Html.AntiForgeryToken()
     </form>
 </div>

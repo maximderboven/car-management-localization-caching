@@ -40,6 +40,10 @@ namespace UI.MVC {
                     opt.SupportedCultures = supportedCultures;
                     opt.SupportedUICultures = supportedCultures;
                 });
+            
+            //caching
+            services.AddResponseCaching();
+            services.AddMvc();
 
 
             services.AddScoped<IDistanceLocalizer, DistanceLocalizer> ();
@@ -63,6 +67,8 @@ namespace UI.MVC {
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts ();
             }
+
+            app.UseResponseCaching();
 
             app.UseHttpsRedirection ();
             app.UseStaticFiles ();
