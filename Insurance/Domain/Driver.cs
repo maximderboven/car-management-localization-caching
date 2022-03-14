@@ -46,11 +46,13 @@ namespace Insurance.Domain
             var errors = new Collection<ValidationResult>();
             if (DateOfBirth > DateTime.Now)
             {
-                errors.Add(new ValidationResult("Error: Date must be in the past"));
+                string errorMessage = ValidationResources.ResourceManager.GetString ("Date_In_The_Past") ?? string.Empty;
+                errors.Add(new ValidationResult(errorMessage));
             }
             if (DateOfBirth == DateTime.MinValue)
             {
-                errors.Add(new ValidationResult("Error: Date can not be empty"));
+                string errorMessage = ValidationResources.ResourceManager.GetString ("Date_In_The_Future") ?? string.Empty;
+                errors.Add(new ValidationResult(errorMessage));
             }
             return errors;
         }

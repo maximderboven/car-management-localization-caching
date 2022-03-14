@@ -4,6 +4,7 @@ using Distances;
 using Insurance.BL;
 using Insurance.Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Localization;
 using UI.MVC.Models;
 
 namespace UI.MVC.Controllers

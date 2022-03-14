@@ -86,7 +86,7 @@ namespace Resources {
                 return ResourceManager.GetString("Car", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Date of birth.
         /// </summary>
