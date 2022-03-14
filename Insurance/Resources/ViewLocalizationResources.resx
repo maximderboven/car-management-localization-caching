@@ -174,4 +174,109 @@
   <data name="Not_A_Valid_Option" xml:space="preserve">
       <value>is not a valid option.</value>
   </data>
+  <data name="All_Cars" xml:space="preserve">
+      <value>All cars</value>
+  </data>
+  <data name="Fuel" xml:space="preserve">
+      <value>Fuel</value>
+  </data>
+  <data name="All_Drivers" xml:space="preserve">
+      <value>All drivers</value>
+  </data>
+  <data name="Enter_part_of_a_name_or_leave_blank_" xml:space="preserve">
+      <value>Enter (part of) a name or leave blank:</value>
+  </data>
+  <data name="Enter_a_full_date__yyyy_mm_dd__or_leave_blank__" xml:space="preserve">
+      <value>Enter a full date (yyyy/mm/dd) or leave blank: </value>
+  </data>
+  <data name="Add_a_driver" xml:space="preserve">
+      <value>Add a driver</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+      <value>firstname: </value>
+  </data>
+  <data name="lastName" xml:space="preserve">
+      <value>lastname: </value>
+  </data>
+  <data name="Date_Of_Birth" xml:space="preserve">
+      <value>Date of birth (mm/dd/yyyy): </value>
+  </data>
+  <data name="Add_Driver_Succes" xml:space="preserve">
+      <value>Added new driver succesfully.</value>
+  </data>
+  <data name="Add_Driver_Failed" xml:space="preserve">
+      <value>Unable to add new driver:</value>
+  </data>
+  <data name="Add_a_Car" xml:space="preserve">
+      <value>Add a car</value>
+  </data>
+  <data name="PurchasePrice" xml:space="preserve">
+      <value>Purchase price</value>
+  </data>
+  <data name="Optional" xml:space="preserve">
+      <value>optional</value>
+  </data>
+  <data name="Brand" xml:space="preserve">
+      <value>Brand</value>
+  </data>
+  <data name="Amount_Of_Seats" xml:space="preserve">
+      <value>Amount of seats:</value>
+  </data>
+  <data name="Amount_of_miles_on_count_" xml:space="preserve">
+      <value>Amount of miles on count:</value>
+  </data>
+  <data name="AddCar_Choose_garage" xml:space="preserve">
+      <value>Choose garage:</value>
+  </data>
+  <data name="Garage" xml:space="preserve">
+      <value>Garage</value>
+  </data>
+  <data name="Add_Car_Succes" xml:space="preserve">
+      <value>Added new car succesfully.</value>
+  </data>
+  <data name="Add_Car_Failed" xml:space="preserve">
+      <value>Unable to add new car:</value>
+  </data>
+  <data name="Add_Rental" xml:space="preserve">
+      <value>Add a new rental</value>
+  </data>
+  <data name="Which_car_would_you_like_to_add_a_driver_to_" xml:space="preserve">
+      <value>Which car would you like to add a driver to?</value>
+  </data>
+  <data name="Enter_Car_ID" xml:space="preserve">
+      <value>Please enter an car ID: </value>
+  </data>
+  <data name="Failed" xml:space="preserve">
+      <value>Something went wrong, please try again.</value>
+  </data>
+  <data name="Remove_Rental" xml:space="preserve">
+      <value>Remove a rental</value>
+  </data>
+  <data name="Select_Car_Drive_Removal" xml:space="preserve">
+      <value>Which car would you like to remove a driver from?</value>
+  </data>
+  <data name="Select_Driver_Car_Removal" xml:space="preserve">
+      <value>Which driver would you like to remove from this car?</value>
+  </data>
+  <data name="Driver_Not_Exist" xml:space="preserve">
+      <value>This driver does not exist. Please try again.</value>
+  </data>
+  <data name="Select_Culture" xml:space="preserve">
+      <value>Pick a culture: </value>
+  </data>
+  <data name="Updated_Culture" xml:space="preserve">
+      <value>Updated culture to </value>
+  </data>
+  <data name="Culture_Invalid" xml:space="preserve">
+      <value>That's not a valid culture, please try again.</value>
+  </data>
+  <data name="How_much_does_the_rental_cost" xml:space="preserve">
+      <value>How much does the rental cost: </value>
+  </data>
+  <data name="Please_enter_a_driver_ID" xml:space="preserve">
+      <value>Please enter a driver ID: </value>
+  </data>
+  <data name="Which_driver_would_you_like_to_add_to_this_car" xml:space="preserve">
+      <value>Which driver would you like to add to this car?</value>
+  </data>
 </root>

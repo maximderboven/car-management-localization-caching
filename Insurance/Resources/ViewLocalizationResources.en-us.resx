@@ -65,4 +65,7 @@
     <data name="Add_Car" xml:space="preserve">
         <value>6) Add a car</value>
     </data>
+    <data name="Garage" xml:space="preserve">
+        <value>Garage</value>
+    </data>
 </root>

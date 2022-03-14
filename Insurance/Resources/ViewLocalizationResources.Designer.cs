@@ -61,11 +61,47 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a car.
+        /// </summary>
+        public static string Add_a_Car {
+            get {
+                return ResourceManager.GetString("Add_a_Car", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a driver.
+        /// </summary>
+        public static string Add_a_driver {
+            get {
+                return ResourceManager.GetString("Add_a_driver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 6) Add a car.
         /// </summary>
         public static string Add_Car {
             get {
                 return ResourceManager.GetString("Add_Car", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unable to add new car:.
+        /// </summary>
+        public static string Add_Car_Failed {
+            get {
+                return ResourceManager.GetString("Add_Car_Failed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Added new car succesfully..
+        /// </summary>
+        public static string Add_Car_Succes {
+            get {
+                return ResourceManager.GetString("Add_Car_Succes", resourceCulture);
             }
         }
         
@@ -79,6 +115,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Unable to add new driver:.
+        /// </summary>
+        public static string Add_Driver_Failed {
+            get {
+                return ResourceManager.GetString("Add_Driver_Failed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Added new driver succesfully..
+        /// </summary>
+        public static string Add_Driver_Succes {
+            get {
+                return ResourceManager.GetString("Add_Driver_Succes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 7) Add a driver to car.
         /// </summary>
         public static string Add_Driver_To_Car {
@@ -88,11 +142,74 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a new rental.
+        /// </summary>
+        public static string Add_Rental {
+            get {
+                return ResourceManager.GetString("Add_Rental", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose garage:.
+        /// </summary>
+        public static string AddCar_Choose_garage {
+            get {
+                return ResourceManager.GetString("AddCar_Choose_garage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All cars.
+        /// </summary>
+        public static string All_Cars {
+            get {
+                return ResourceManager.GetString("All_Cars", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to All drivers.
+        /// </summary>
+        public static string All_Drivers {
+            get {
+                return ResourceManager.GetString("All_Drivers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 4) All drivers with name and/or date of birth.
         /// </summary>
         public static string All_Drivers_Filtered {
             get {
                 return ResourceManager.GetString("All_Drivers_Filtered", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amount of miles on count:.
+        /// </summary>
+        public static string Amount_of_miles_on_count_ {
+            get {
+                return ResourceManager.GetString("Amount_of_miles_on_count_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Amount of seats:.
+        /// </summary>
+        public static string Amount_Of_Seats {
+            get {
+                return ResourceManager.GetString("Amount_Of_Seats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brand.
+        /// </summary>
+        public static string Brand {
+            get {
+                return ResourceManager.GetString("Brand", resourceCulture);
             }
         }
         
@@ -115,11 +232,65 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to That&apos;s not a valid culture, please try again..
+        /// </summary>
+        public static string Culture_Invalid {
+            get {
+                return ResourceManager.GetString("Culture_Invalid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of birth (mm/dd/yyyy): .
+        /// </summary>
+        public static string Date_Of_Birth {
+            get {
+                return ResourceManager.GetString("Date_Of_Birth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This driver does not exist. Please try again..
+        /// </summary>
+        public static string Driver_Not_Exist {
+            get {
+                return ResourceManager.GetString("Driver_Not_Exist", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to English.
         /// </summary>
         public static string en_US {
             get {
                 return ResourceManager.GetString("en-US", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter a full date (yyyy/mm/dd) or leave blank: .
+        /// </summary>
+        public static string Enter_a_full_date__yyyy_mm_dd__or_leave_blank__ {
+            get {
+                return ResourceManager.GetString("Enter_a_full_date__yyyy_mm_dd__or_leave_blank__", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter an car ID: .
+        /// </summary>
+        public static string Enter_Car_ID {
+            get {
+                return ResourceManager.GetString("Enter_Car_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter (part of) a name or leave blank:.
+        /// </summary>
+        public static string Enter_part_of_a_name_or_leave_blank_ {
+            get {
+                return ResourceManager.GetString("Enter_part_of_a_name_or_leave_blank_", resourceCulture);
             }
         }
         
@@ -133,11 +304,65 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Something went wrong, please try again..
+        /// </summary>
+        public static string Failed {
+            get {
+                return ResourceManager.GetString("Failed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to firstname: .
+        /// </summary>
+        public static string FirstName {
+            get {
+                return ResourceManager.GetString("FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to French.
         /// </summary>
         public static string fr_FR {
             get {
                 return ResourceManager.GetString("fr-FR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fuel.
+        /// </summary>
+        public static string Fuel {
+            get {
+                return ResourceManager.GetString("Fuel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Garage.
+        /// </summary>
+        public static string Garage {
+            get {
+                return ResourceManager.GetString("Garage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How much does the rental cost: .
+        /// </summary>
+        public static string How_much_does_the_rental_cost {
+            get {
+                return ResourceManager.GetString("How_much_does_the_rental_cost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to lastname: .
+        /// </summary>
+        public static string lastName {
+            get {
+                return ResourceManager.GetString("lastName", resourceCulture);
             }
         }
         
@@ -160,11 +385,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to optional.
+        /// </summary>
+        public static string Optional {
+            get {
+                return ResourceManager.GetString("Optional", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter a driver ID: .
+        /// </summary>
+        public static string Please_enter_a_driver_ID {
+            get {
+                return ResourceManager.GetString("Please_enter_a_driver_ID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Possible cultures:.
         /// </summary>
         public static string Possible_Cultures {
             get {
                 return ResourceManager.GetString("Possible_Cultures", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purchase price.
+        /// </summary>
+        public static string PurchasePrice {
+            get {
+                return ResourceManager.GetString("PurchasePrice", resourceCulture);
             }
         }
         
@@ -183,6 +435,42 @@ namespace Resources {
         public static string Remove_Driver_From_Car {
             get {
                 return ResourceManager.GetString("Remove_Driver_From_Car", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove a rental.
+        /// </summary>
+        public static string Remove_Rental {
+            get {
+                return ResourceManager.GetString("Remove_Rental", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Which car would you like to remove a driver from?.
+        /// </summary>
+        public static string Select_Car_Drive_Removal {
+            get {
+                return ResourceManager.GetString("Select_Car_Drive_Removal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pick a culture: .
+        /// </summary>
+        public static string Select_Culture {
+            get {
+                return ResourceManager.GetString("Select_Culture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Which driver would you like to remove from this car?.
+        /// </summary>
+        public static string Select_Driver_Car_Removal {
+            get {
+                return ResourceManager.GetString("Select_Driver_Car_Removal", resourceCulture);
             }
         }
         
@@ -223,11 +511,38 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Updated culture to .
+        /// </summary>
+        public static string Updated_Culture {
+            get {
+                return ResourceManager.GetString("Updated_Culture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to What would you like to do?.
         /// </summary>
         public static string What_would_you_like_to_do {
             get {
                 return ResourceManager.GetString("What_would_you_like_to_do", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Which car would you like to add a driver to?.
+        /// </summary>
+        public static string Which_car_would_you_like_to_add_a_driver_to_ {
+            get {
+                return ResourceManager.GetString("Which_car_would_you_like_to_add_a_driver_to_", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Which driver would you like to add to this car?.
+        /// </summary>
+        public static string Which_driver_would_you_like_to_add_to_this_car {
+            get {
+                return ResourceManager.GetString("Which_driver_would_you_like_to_add_to_this_car", resourceCulture);
             }
         }
     }
