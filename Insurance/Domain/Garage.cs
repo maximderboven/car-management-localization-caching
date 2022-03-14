@@ -1,12 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Resources;
 
 namespace Insurance.Domain
 {
     public class Garage
     {
         [Required(ErrorMessage = "Garage name is required")] public string Name { get; set; }
+        [Display (ResourceType = typeof(PropertyResources), Name = "Adress")]
         public string Adress { get; set; }
+        [Display (ResourceType = typeof(PropertyResources), Name = "Telnr")]
         public string Telnr { get; set; }
         [Key] public int Id { get; set; }
         

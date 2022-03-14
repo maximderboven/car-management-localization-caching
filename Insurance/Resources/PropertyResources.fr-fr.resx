@@ -1,4 +1,4 @@
-﻿<root>
+<root>
     <resheader name="resmimetype">
         <value>text/microsoft-resx</value>
     </resheader>
@@ -12,57 +12,57 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="Seats" xml:space="preserve">
-        <value>Zetels</value>
+        <value>Sièges</value>
+    </data>
+    <data name="Adress" xml:space="preserve">
+        <value>Adresse</value>
     </data>
     <data name="Brand" xml:space="preserve">
-        <value>Merk</value>
-    </data>
-    <data name="NumberPlate" xml:space="preserve">
-        <value>Nummerplaat</value>
+        <value>Marque</value>
     </data>
     <data name="Car" xml:space="preserve">
-        <value>Auto</value>
+        <value>Voiture</value>
     </data>
     <data name="DateOfBirth" xml:space="preserve">
-        <value>Geboortedatum</value>
+        <value>Date de naissance</value>
     </data>
     <data name="Driver" xml:space="preserve">
-        <value>Bestuurder</value>
+        <value>Conducteur</value>
     </data>
     <data name="EndDate" xml:space="preserve">
-        <value>Einddatum</value>
+        <value>Date de fin</value>
     </data>
     <data name="FirstName" xml:space="preserve">
-        <value>Voornaam</value>
+        <value>Prénom</value>
     </data>
     <data name="Fuel" xml:space="preserve">
-        <value>Brandstof</value>
+        <value>carburant</value>
     </data>
     <data name="Garage" xml:space="preserve">
         <value>Garage</value>
     </data>
     <data name="LastName" xml:space="preserve">
-        <value>Achternaam</value>
+        <value>Nom de famille</value>
     </data>
     <data name="Mileage" xml:space="preserve">
-        <value>Kilometerstand</value>
+        <value>Kilométrage</value>
+    </data>
+    <data name="NumberPlate" xml:space="preserve">
+        <value>Plaque d'immatriculation</value>
     </data>
     <data name="Price" xml:space="preserve">
-        <value>Prijs</value>
+        <value>Prix</value>
     </data>
     <data name="PurchasePrice" xml:space="preserve">
-        <value>Aankoopprijs</value>
+        <value>Prix d'achat</value>
     </data>
     <data name="SocialNumber" xml:space="preserve">
-        <value>Rijksregisternummer</value>
+        <value>Numéro de registre national</value>
     </data>
     <data name="StartDate" xml:space="preserve">
-        <value>Startdatum</value>
+        <value>Date d'entrée</value>
     </data>
     <data name="Telnr" xml:space="preserve">
-        <value>Telefoonnnummer</value>
-    </data>
-    <data name="Adress" xml:space="preserve">
-        <value>Address</value>
+        <value>Numéro de téléphone</value>
     </data>
 </root>

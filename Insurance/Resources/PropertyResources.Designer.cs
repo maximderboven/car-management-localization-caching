@@ -61,11 +61,101 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Adress.
+        /// </summary>
+        public static string Adress {
+            get {
+                return ResourceManager.GetString("Adress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Brand.
         /// </summary>
         public static string Brand {
             get {
                 return ResourceManager.GetString("Brand", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Car.
+        /// </summary>
+        public static string Car {
+            get {
+                return ResourceManager.GetString("Car", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date of birth.
+        /// </summary>
+        public static string DateOfBirth {
+            get {
+                return ResourceManager.GetString("DateOfBirth", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Driver.
+        /// </summary>
+        public static string Driver {
+            get {
+                return ResourceManager.GetString("Driver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End date.
+        /// </summary>
+        public static string EndDate {
+            get {
+                return ResourceManager.GetString("EndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Firstname.
+        /// </summary>
+        public static string FirstName {
+            get {
+                return ResourceManager.GetString("FirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fuel.
+        /// </summary>
+        public static string Fuel {
+            get {
+                return ResourceManager.GetString("Fuel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Garage.
+        /// </summary>
+        public static string Garage {
+            get {
+                return ResourceManager.GetString("Garage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lastname.
+        /// </summary>
+        public static string LastName {
+            get {
+                return ResourceManager.GetString("LastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mileage.
+        /// </summary>
+        public static string Mileage {
+            get {
+                return ResourceManager.GetString("Mileage", resourceCulture);
             }
         }
         
@@ -79,11 +169,56 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Price.
+        /// </summary>
+        public static string Price {
+            get {
+                return ResourceManager.GetString("Price", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Purchaseprice.
+        /// </summary>
+        public static string PurchasePrice {
+            get {
+                return ResourceManager.GetString("PurchasePrice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Seats.
         /// </summary>
         public static string Seats {
             get {
                 return ResourceManager.GetString("Seats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Socialnumber.
+        /// </summary>
+        public static string SocialNumber {
+            get {
+                return ResourceManager.GetString("SocialNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start date.
+        /// </summary>
+        public static string StartDate {
+            get {
+                return ResourceManager.GetString("StartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Telephone number.
+        /// </summary>
+        public static string Telnr {
+            get {
+                return ResourceManager.GetString("Telnr", resourceCulture);
             }
         }
     }

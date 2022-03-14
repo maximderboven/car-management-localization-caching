@@ -16,15 +16,21 @@ namespace Insurance.Domain
 
         [Display (ResourceType = typeof(PropertyResources), Name = "NumberPlate")]
         [Key] public int NumberPlate { get; set; }
+        
+        [Display (ResourceType = typeof(PropertyResources), Name = "Fuel")]
         public Fuel Fuel { get; set; }
 
         [Range(1, 7, ErrorMessage = "Error: Seats need to be between 1 and 7")]
+        [Display (ResourceType = typeof(PropertyResources), Name = "Seats")]
         public short Seats { get; set; }
 
         [Required(ErrorMessage = "Error: Milage is required")]
+        [Display (ResourceType = typeof(PropertyResources), Name = "Mileage")]
         public double Mileage { get; set; }
 
+        [Display (ResourceType = typeof(PropertyResources), Name = "Garage")]
         public Garage Garage { get; set; }
+        [Display (ResourceType = typeof(PropertyResources), Name = "PurchasePrice")]
         public long? PurchasePrice { get; set; }
 
         public ICollection<Rental> Rentals;
