@@ -8,29 +8,34 @@ namespace Insurance.Domain
 {
     public class Car : IValidatableObject
     {
-        [Required(ErrorMessageResourceType = typeof (ValidationResources),
+        [Required(ErrorMessageResourceType = typeof(ValidationResources),
             ErrorMessageResourceName = "Required")]
-        [StringLength(20, ErrorMessage = "Error: Brand min. 2 CHAR & max. 20 CHAR ", MinimumLength = 2)]
-        [Display (ResourceType = typeof(PropertyResources), Name = "Brand")]
+        [StringLength(20, ErrorMessageResourceType = typeof(ValidationResources),
+            ErrorMessageResourceName = "Stringlength", MinimumLength = 2)]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Brand")]
         public string Brand { get; set; }
 
-        [Display (ResourceType = typeof(PropertyResources), Name = "NumberPlate")]
-        [Key] public int NumberPlate { get; set; }
-        
-        [Display (ResourceType = typeof(PropertyResources), Name = "Fuel")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "NumberPlate")]
+        [Key]
+        public int NumberPlate { get; set; }
+
+        [Display(ResourceType = typeof(PropertyResources), Name = "Fuel")]
         public Fuel Fuel { get; set; }
 
-        [Range(1, 7, ErrorMessage = "Error: Seats need to be between 1 and 7")]
-        [Display (ResourceType = typeof(PropertyResources), Name = "Seats")]
+        [Range(1, 7, ErrorMessageResourceType = typeof(ValidationResources),
+            ErrorMessageResourceName = "Range")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Seats")]
         public short Seats { get; set; }
 
-        [Required(ErrorMessage = "Error: Milage is required")]
-        [Display (ResourceType = typeof(PropertyResources), Name = "Mileage")]
+        [Required(ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Required")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Mileage")]
         public double Mileage { get; set; }
 
-        [Display (ResourceType = typeof(PropertyResources), Name = "Garage")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Garage")]
         public Garage Garage { get; set; }
-        [Display (ResourceType = typeof(PropertyResources), Name = "PurchasePrice")]
+
+        [Display(ResourceType = typeof(PropertyResources), Name = "PurchasePrice")]
         public long? PurchasePrice { get; set; }
 
         public ICollection<Rental> Rentals;
@@ -61,6 +66,7 @@ namespace Insurance.Domain
             {
                 errors.Add(new ValidationResult("Error: Fuel not supported"));
             }
+
             return errors;
         }
     }

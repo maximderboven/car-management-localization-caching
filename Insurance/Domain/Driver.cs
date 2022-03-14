@@ -8,13 +8,17 @@ namespace Insurance.Domain
 {
     public class Driver : IValidatableObject
     {
-        [Required(ErrorMessage = "Error: Firstname is required")]
-        [StringLength(40,ErrorMessage = "Error: Firstname min. 3 CHAR",MinimumLength = 3)]
+        [Required(ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Required")]
+        [StringLength(40,ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Stringlength",MinimumLength = 3)]
         [Display (ResourceType = typeof(PropertyResources), Name = "FirstName")]
         public string FirstName { get; set; }
 
-        [Required(ErrorMessage = "Error: Lastname is required")]
-        [StringLength(40, ErrorMessage = "Error: Lastname min. 3 CHAR",MinimumLength = 3)]
+        [Required(ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Required")]
+        [StringLength(40, ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Stringlength",MinimumLength = 3)]
         [Display (ResourceType = typeof(PropertyResources), Name = "LastName")]
         public string LastName { get; set; }
 

@@ -6,7 +6,8 @@ namespace Insurance.Domain
 {
     public class Garage
     {
-        [Required(ErrorMessage = "Garage name is required")] public string Name { get; set; }
+        [Required(ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Required")] public string Name { get; set; }
         [Display (ResourceType = typeof(PropertyResources), Name = "Adress")]
         public string Adress { get; set; }
         [Display (ResourceType = typeof(PropertyResources), Name = "Telnr")]
