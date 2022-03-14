@@ -65,4 +65,7 @@
     <data name="Telnr" xml:space="preserve">
         <value>Numéro de téléphone</value>
     </data>
+    <data name="Name" xml:space="preserve">
+        <value>Nom</value>
+    </data>
 </root>

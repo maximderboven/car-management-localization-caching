@@ -72,4 +72,7 @@
     <data name="Driver" xml:space="preserve">
         <value>Driver</value>
     </data>
+    <data name="Name" xml:space="preserve">
+        <value>Name</value>
+    </data>
 </root>

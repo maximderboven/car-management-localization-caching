@@ -65,4 +65,7 @@
     <data name="Adress" xml:space="preserve">
         <value>Address</value>
     </data>
+    <data name="Name" xml:space="preserve">
+        <value>Naam</value>
+    </data>
 </root>

@@ -12,15 +12,15 @@ namespace UI.MVC.Models
             ErrorMessageResourceName = "Required")]
         [Range(10,10000, ErrorMessageResourceType = typeof (ValidationResources),
             ErrorMessageResourceName = "Range")]
-        [Display (Name = "Price")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Price")]
         public double Price { get; set; }
-        [Display (Name = "StartDate")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "StartDate")]
         public DateTime StartDate { get; set; }
-        [Display (Name = "EndDate")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "EndDate")]
         public DateTime EndDate { get; set; }
-        [Display (Name = "Numberplate")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "NumberPlate")]
         public int NumberPlate { get; set; }
-        [Display (Name = "Socialnumber")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Socialnumber")]
         public int Socialnumber { get; set; }
         
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)

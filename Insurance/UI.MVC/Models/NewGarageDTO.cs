@@ -10,11 +10,11 @@ namespace UI.MVC.Models
         [StringLength(50, MinimumLength = 2,
             ErrorMessageResourceType = typeof(ValidationResources),
             ErrorMessageResourceName = "StringLength")]
-        [Display(Name = "Name")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Name")]
         public string Name { get; set; }
-        [Display (Name = "Address")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Adress")]
         public string Adress { get; set; }
-        [Display (Name = "TelNr")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "Telnr")]
         public string Telnr { get; set; }
         public int Id { get; set; }
     }
