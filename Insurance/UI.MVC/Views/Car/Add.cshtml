@@ -20,28 +20,29 @@
         <label asp-for="Fuel">@_localizer["Fuel"]</label>
         <select asp-for="Fuel" asp-items="@Html.GetEnumSelectList<Fuel>()" class="form-control">
         </select>
-        <span asp-validation-for="Fuel" class="text-danger"></span>
+        <!--<span asp-validation-for="Fuel" class="text-danger"></span>-->
+        <span class="text-danger">@Html.ValidationMessageFor(car => car.Fuel)</span>
     </div>
     <div class="form-group">
         <label asp-for="Brand">@_localizer["Brand"]</label>
         <input asp-for="Brand" class="form-control" type="text"/>
-        <span asp-validation-for="Brand" class="text-danger"></span>
+        <span class="text-danger">@Html.ValidationMessageFor(car => car.Brand)</span>
     </div>
     <div class="form-group">
         <label asp-for="Mileage">@_localizer["Mileage"] (@_distLocalizer.GetSymbol(DistanceUnit.Kilometers, DistanceUnit.Miles))</label>
         <!--  asp-is-invariant="true" is voor de komma en punt regio (werkt alsnog niet)-->
         <input asp-for="Mileage" type="number" step="0.01"  class="form-control"/>
-        <span asp-validation-for="Mileage" class="text-danger"></span>
+        @Html.ValidationMessageFor(car => car.Mileage, "", new { @class = "text-danger"})
     </div>
     <div class="form-group">
         <label asp-for="Seats">@_localizer["Amount of Seats"]</label>
         <input type="number" asp-for="Seats" min="1" max="8"/>
-        <span asp-validation-for="Seats" class="text-danger"></span>
+        @Html.ValidationMessageFor(car => car.Seats, "", new { @class = "text-danger"})
     </div>
     <div class="form-group">
         <label asp-for="PurchasePrice">@_localizer["Purchase Price"] (@Thread.CurrentThread.CurrentUICulture.NumberFormat.CurrencySymbol)</label>
         <input type="number" asp-for="PurchasePrice"/>
-        <span asp-validation-for="PurchasePrice" class="text-danger"></span>
+        @Html.ValidationMessageFor(car => car.PurchasePrice, "", new { @class = "text-danger"})
     </div>
     <div class="form-group">
         <label asp-for="Garage">@_localizer["Garage"]</label>

@@ -5,4 +5,8 @@
         <RootNamespace>Insurance.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Resources\Resources.csproj" />
+    </ItemGroup>
+
 </Project>

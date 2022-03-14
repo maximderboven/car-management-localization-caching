@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
+using Resources;
 
 namespace UI.MVC.Models
 {
     public class RentalDTO : IValidatableObject
     {
-        [Required(ErrorMessage = "Error: Brand is required")]
-        [Range(10,10000,ErrorMessage = "Error: Price need to be between 10 and 10.000")]
+        [Required(ErrorMessageResourceType = typeof(ValidationResources),
+            ErrorMessageResourceName = "Required")]
+        [Range(10,10000, ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Range")]
+        [Display (Name = "Price")]
         public double Price { get; set; }
+        [Display (Name = "StartDate")]
         public DateTime StartDate { get; set; }
+        [Display (Name = "EndDate")]
         public DateTime EndDate { get; set; }
+        [Display (Name = "Numberplate")]
         public int NumberPlate { get; set; }
+        [Display (Name = "Socialnumber")]
         public int Socialnumber { get; set; }
         
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
@@ -20,11 +28,11 @@ namespace UI.MVC.Models
             var errors = new Collection<ValidationResult>();
             if (StartDate < DateTime.Now)
             {
-                errors.Add(new ValidationResult("Start date must be in the future"));
+                errors.Add(new ValidationResult(string.Format (ValidationResources.Before, StartDate, EndDate)));
             }
             if (EndDate < StartDate)
             {
-                errors.Add(new ValidationResult("EndDate must be greater or the same as the startdate"));
+                errors.Add(new ValidationResult(string.Format (ValidationResources.After, EndDate, StartDate)));
             }
             return errors;
         }
