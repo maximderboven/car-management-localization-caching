@@ -21,12 +21,12 @@
         <select asp-for="Fuel" asp-items="@Html.GetEnumSelectList<Fuel>()" class="form-control">
         </select>
         <!--<span asp-validation-for="Fuel" class="text-danger"></span>-->
-        @Html.ValidationMessageFor(car => car.Fuel, "", new { @class = "text-danger"})
+        <span class="text-danger">@Html.ValidationMessageFor(car => car.Fuel)</span>
     </div>
     <div class="form-group">
         <label asp-for="Brand">@_localizer["Brand"]</label>
         <input asp-for="Brand" class="form-control" type="text"/>
-        @Html.ValidationMessageFor(car => car.Brand, "", new { @class = "text-danger"})
+        <span class="text-danger">@Html.ValidationMessageFor(car => car.Brand)</span>
     </div>
     <div class="form-group">
         <label asp-for="Mileage">@_localizer["Mileage"] (@_distLocalizer.GetSymbol(DistanceUnit.Kilometers, DistanceUnit.Miles))</label>

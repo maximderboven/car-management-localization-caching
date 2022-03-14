@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
 
 namespace UI.MVC {
@@ -26,7 +27,9 @@ namespace UI.MVC {
 
             // Localization
             services.AddLocalization (opt => { opt.ResourcesPath = "Resources"; });
-            services.AddMvc ().AddViewLocalization (LanguageViewLocationExpanderFormat.Suffix).AddDataAnnotationsLocalization ();
+            services.AddControllersWithViews ()
+                .AddViewLocalization (LanguageViewLocationExpanderFormat.Suffix)
+                .AddDataAnnotationsLocalization ();
 
             services.Configure<RequestLocalizationOptions> (
                 opt => {
@@ -49,8 +52,6 @@ namespace UI.MVC {
             services.AddDbContext<InsuranceDbContext> ();
             services.AddScoped<IRepository, Repository> ();
             services.AddScoped<IManager, Manager> ();
-
-            services.AddControllersWithViews ();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,9 +70,15 @@ namespace UI.MVC {
 
             app.UseRouting ();
 
-            app.UseAuthorization ();
+            // app.UseAuthorization ();
 
             app.UseRequestLocalization (app.ApplicationServices.GetRequiredService<IOptions<RequestLocalizationOptions>> ().Value);
+
+            /*app.UseMvc (routes => {
+                routes.MapRoute (
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });*/
 
             app.UseEndpoints (endpoints => {
                 endpoints.MapControllerRoute (

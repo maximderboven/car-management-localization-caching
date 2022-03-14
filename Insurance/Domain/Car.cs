@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel.DataAnnotations;
+using Resources;
 
 namespace Insurance.Domain
 {
     public class Car : IValidatableObject
     {
-        [Required(ErrorMessage = "Error: Brand is required")]
+        [Required(ErrorMessageResourceType = typeof (ValidationResources),
+            ErrorMessageResourceName = "Required")]
         [StringLength(20, ErrorMessage = "Error: Brand min. 2 CHAR & max. 20 CHAR ", MinimumLength = 2)]
         public string Brand { get; set; }
 
