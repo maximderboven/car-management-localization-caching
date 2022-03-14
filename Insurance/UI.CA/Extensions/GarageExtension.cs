@@ -1,4 +1,5 @@
 ﻿using Insurance.Domain;
+using Resources;
 
 namespace Insurance.UI.CA.Extensions
 {
@@ -6,7 +7,7 @@ namespace Insurance.UI.CA.Extensions
     {
         internal static string GetInfo(this Garage g)
         {
-            return $"Garage {g.Name}";
+            return $"{PropertyResources.Garage} {g.Name}";
         }
     }
 }
