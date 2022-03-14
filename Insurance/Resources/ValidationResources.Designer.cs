@@ -79,6 +79,42 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Date must be in the future..
+        /// </summary>
+        public static string Date_In_The_Future {
+            get {
+                return ResourceManager.GetString("Date_In_The_Future", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date must be in the past..
+        /// </summary>
+        public static string Date_In_The_Past {
+            get {
+                return ResourceManager.GetString("Date_In_The_Past", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} is not supported..
+        /// </summary>
+        public static string Not_Supported {
+            get {
+                return ResourceManager.GetString("Not_Supported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &apos;{0}&apos; must be positive..
+        /// </summary>
+        public static string Positive {
+            get {
+                return ResourceManager.GetString("Positive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to &apos;{0}&apos; must be between {1} and {2}..
         /// </summary>
         public static string Range {

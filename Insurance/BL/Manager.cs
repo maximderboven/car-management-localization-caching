@@ -6,6 +6,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Text;
 using Insurance.Domain;
 using Insurance.DAL;
+using Resources;
 
 namespace Insurance.BL
 {
@@ -34,7 +35,10 @@ namespace Insurance.BL
 
         public Car AddCar(long? purchasePrice, string brand, Fuel fuel, short seats, double mileage, Garage garage)
         {
-            if (mileage < 0) throw new ValidationException("Miles need to be positive");
+            if (mileage < 0) {
+                string errorMessage = string.Format(ValidationResources.Positive, PropertyResources.Mileage);
+                throw new ValidationException(errorMessage);
+            }
             var car = new Car(purchasePrice, brand, fuel, seats, mileage, garage);
             ValidateCar(car);
             _repo.CreateCar(car);

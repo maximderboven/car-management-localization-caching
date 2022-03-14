@@ -11,7 +11,7 @@ namespace Insurance.Domain
         [Required(ErrorMessageResourceType = typeof(ValidationResources),
             ErrorMessageResourceName = "Required")]
         [StringLength(20, ErrorMessageResourceType = typeof(ValidationResources),
-            ErrorMessageResourceName = "Stringlength", MinimumLength = 2)]
+            ErrorMessageResourceName = "StringLength", MinimumLength = 2)]
         [Display(ResourceType = typeof(PropertyResources), Name = "Brand")]
         public string Brand { get; set; }
 
@@ -64,7 +64,8 @@ namespace Insurance.Domain
             var errors = new Collection<ValidationResult>();
             if (!Enum.IsDefined(Fuel))
             {
-                errors.Add(new ValidationResult("Error: Fuel not supported"));
+                string errorMessage = string.Format (ValidationResources.Not_Supported, PropertyResources.Fuel);
+                errors.Add(new ValidationResult(errorMessage));
             }
 
             return errors;
