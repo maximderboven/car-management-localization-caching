@@ -3,6 +3,7 @@ using System.Linq;
 using Distances;
 using Insurance.BL;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Localization;
 using UI.MVC.Models;
 
 namespace UI.MVC.Controllers

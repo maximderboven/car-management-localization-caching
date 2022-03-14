@@ -1,0 +1,35 @@
+﻿<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="What_would_you_like_to_do" xml:space="preserve">
+        <value>Wat wil je doen</value>
+    </data>
+    <data name="Exit_Message" xml:space="preserve">
+        <value>Tot ziens</value>
+    </data>
+    <data name="en-US" xml:space="preserve">
+        <value>Engels</value>
+    </data>
+    <data name="nl-BE" xml:space="preserve">
+        <value>Nederlands</value>
+    </data>
+    <data name="fr-FR" xml:space="preserve">
+        <value>Frans</value>
+    </data>
+    <data name="Choice" xml:space="preserve">
+        <value>Keuze (0, 9):</value>
+    </data>
+    <data name="Add_Car" xml:space="preserve">
+        <value>6) Voeg een auto toe</value>
+    </data>
+</root>

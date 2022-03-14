@@ -1,0 +1,68 @@
+﻿<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="What_would_you_like_to_do" xml:space="preserve">
+        <value>What would you like to do?</value>
+    </data>
+    <data name="Exit_Message" xml:space="preserve">
+        <value>Goodbye</value>
+    </data>
+    <data name="Show_All_Drivers" xml:space="preserve">
+        <value>3) Show all drivers</value>
+    </data>
+    <data name="Show_All_Cars" xml:space="preserve">
+        <value>1) Show all cars</value>
+    </data>
+    <data name="Quit" xml:space="preserve">
+        <value>0) Quit</value>
+    </data>
+    <data name="Choice" xml:space="preserve">
+        <value>Choice (0, 9): </value>
+    </data>
+    <data name="Car_Insurance" xml:space="preserve">
+        <value>Car Insurance</value>
+    </data>
+    <data name="en-US" xml:space="preserve">
+        <value>English</value>
+    </data>
+    <data name="fr-FR" xml:space="preserve">
+        <value>French</value>
+    </data>
+    <data name="nl-BE" xml:space="preserve">
+        <value>Dutch</value>
+    </data>
+    <data name="Possible_Cultures" xml:space="preserve">
+        <value>Possible cultures:</value>
+    </data>
+    <data name="Remove_Driver_From_Car" xml:space="preserve">
+        <value>8) Remove driver from car</value>
+    </data>
+    <data name="Switch_Culture" xml:space="preserve">
+        <value>8) Remove driver from car</value>
+    </data>
+    <data name="Show_Cars_By_Fuel" xml:space="preserve">
+        <value>2) Show cars by Fuel</value>
+    </data>
+    <data name="All_Drivers_Filtered" xml:space="preserve">
+        <value>4) All drivers with name and/or date of birth</value>
+    </data>
+    <data name="Add_Driver_To_Car" xml:space="preserve">
+        <value>7) Add a driver to car</value>
+    </data>
+    <data name="Add_Driver" xml:space="preserve">
+        <value>5) Add a driver</value>
+    </data>
+    <data name="Add_Car" xml:space="preserve">
+        <value>6) Add a car</value>
+    </data>
+</root>

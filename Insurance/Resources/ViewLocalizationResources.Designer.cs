@@ -22,14 +22,14 @@ namespace Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class PropertyResources {
+    public class ViewLocalizationResources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal PropertyResources() {
+        internal ViewLocalizationResources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.PropertyResources", typeof(PropertyResources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Resources.ViewLocalizationResources", typeof(ViewLocalizationResources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,173 +61,173 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Adress.
+        ///   Looks up a localized string similar to 6) Add a car.
         /// </summary>
-        public static string Adress {
+        public static string Add_Car {
             get {
-                return ResourceManager.GetString("Adress", resourceCulture);
+                return ResourceManager.GetString("Add_Car", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Brand.
+        ///   Looks up a localized string similar to 5) Add a driver.
         /// </summary>
-        public static string Brand {
+        public static string Add_Driver {
             get {
-                return ResourceManager.GetString("Brand", resourceCulture);
+                return ResourceManager.GetString("Add_Driver", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Car.
+        ///   Looks up a localized string similar to 7) Add a driver to car.
         /// </summary>
-        public static string Car {
+        public static string Add_Driver_To_Car {
             get {
-                return ResourceManager.GetString("Car", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Date of birth.
-        /// </summary>
-        public static string DateOfBirth {
-            get {
-                return ResourceManager.GetString("DateOfBirth", resourceCulture);
+                return ResourceManager.GetString("Add_Driver_To_Car", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Driver.
+        ///   Looks up a localized string similar to 4) All drivers with name and/or date of birth.
         /// </summary>
-        public static string Driver {
+        public static string All_Drivers_Filtered {
             get {
-                return ResourceManager.GetString("Driver", resourceCulture);
+                return ResourceManager.GetString("All_Drivers_Filtered", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to End date.
+        ///   Looks up a localized string similar to Car Insurance.
         /// </summary>
-        public static string EndDate {
+        public static string Car_Insurance {
             get {
-                return ResourceManager.GetString("EndDate", resourceCulture);
+                return ResourceManager.GetString("Car_Insurance", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Firstname.
+        ///   Looks up a localized string similar to Choice (0, 9): .
         /// </summary>
-        public static string FirstName {
+        public static string Choice {
             get {
-                return ResourceManager.GetString("FirstName", resourceCulture);
+                return ResourceManager.GetString("Choice", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fuel.
+        ///   Looks up a localized string similar to English.
         /// </summary>
-        public static string Fuel {
+        public static string en_US {
             get {
-                return ResourceManager.GetString("Fuel", resourceCulture);
+                return ResourceManager.GetString("en-US", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Garage.
+        ///   Looks up a localized string similar to Goodbye.
         /// </summary>
-        public static string Garage {
+        public static string Exit_Message {
             get {
-                return ResourceManager.GetString("Garage", resourceCulture);
+                return ResourceManager.GetString("Exit_Message", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lastname.
+        ///   Looks up a localized string similar to French.
         /// </summary>
-        public static string LastName {
+        public static string fr_FR {
             get {
-                return ResourceManager.GetString("LastName", resourceCulture);
+                return ResourceManager.GetString("fr-FR", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mileage.
+        ///   Looks up a localized string similar to Dutch.
         /// </summary>
-        public static string Mileage {
+        public static string nl_BE {
             get {
-                return ResourceManager.GetString("Mileage", resourceCulture);
+                return ResourceManager.GetString("nl-BE", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Name.
+        ///   Looks up a localized string similar to is not a valid option..
         /// </summary>
-        public static string Name {
+        public static string Not_A_Valid_Option {
             get {
-                return ResourceManager.GetString("Name", resourceCulture);
+                return ResourceManager.GetString("Not_A_Valid_Option", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Numberplate.
+        ///   Looks up a localized string similar to Possible cultures:.
         /// </summary>
-        public static string NumberPlate {
+        public static string Possible_Cultures {
             get {
-                return ResourceManager.GetString("NumberPlate", resourceCulture);
+                return ResourceManager.GetString("Possible_Cultures", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Price.
+        ///   Looks up a localized string similar to 0) Quit.
         /// </summary>
-        public static string Price {
+        public static string Quit {
             get {
-                return ResourceManager.GetString("Price", resourceCulture);
+                return ResourceManager.GetString("Quit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Purchaseprice.
+        ///   Looks up a localized string similar to 8) Remove driver from car.
         /// </summary>
-        public static string PurchasePrice {
+        public static string Remove_Driver_From_Car {
             get {
-                return ResourceManager.GetString("PurchasePrice", resourceCulture);
+                return ResourceManager.GetString("Remove_Driver_From_Car", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Seats.
+        ///   Looks up a localized string similar to 1) Show all cars.
         /// </summary>
-        public static string Seats {
+        public static string Show_All_Cars {
             get {
-                return ResourceManager.GetString("Seats", resourceCulture);
+                return ResourceManager.GetString("Show_All_Cars", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Socialnumber.
+        ///   Looks up a localized string similar to 3) Show all drivers.
         /// </summary>
-        public static string SocialNumber {
+        public static string Show_All_Drivers {
             get {
-                return ResourceManager.GetString("SocialNumber", resourceCulture);
+                return ResourceManager.GetString("Show_All_Drivers", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Start date.
+        ///   Looks up a localized string similar to 2) Show cars by Fuel.
         /// </summary>
-        public static string StartDate {
+        public static string Show_Cars_By_Fuel {
             get {
-                return ResourceManager.GetString("StartDate", resourceCulture);
+                return ResourceManager.GetString("Show_Cars_By_Fuel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Telephone number.
+        ///   Looks up a localized string similar to 9) Switch culture.
         /// </summary>
-        public static string Telnr {
+        public static string Switch_Culture {
             get {
-                return ResourceManager.GetString("Telnr", resourceCulture);
+                return ResourceManager.GetString("Switch_Culture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to What would you like to do?.
+        /// </summary>
+        public static string What_would_you_like_to_do {
+            get {
+                return ResourceManager.GetString("What_would_you_like_to_do", resourceCulture);
             }
         }
     }

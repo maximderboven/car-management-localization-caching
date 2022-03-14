@@ -1,26 +1,58 @@
-﻿using System;
-using System.Linq;
+﻿using Distances;
 using Insurance.BL;
+using Insurance.DAL;
 using Insurance.DAL.EF;
 using Insurance.Domain;
 using Insurance.UI.CA.Extensions;
+using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Threading;
+using vlr = Resources.ViewLocalizationResources;
 
-#nullable enable
-namespace Insurance.UI.CA
-{
+namespace Insurance.UI.CA {
     internal class Program
     {
         private readonly IManager _manager;
+        private List<CultureInfo> supportedCultures = new List<CultureInfo> {
+            new CultureInfo ("en-US"),
+            new CultureInfo ("fr-FR"),
+            new CultureInfo ("nl-BE")
+        };
 
-        private Program()
+        public static IServiceCollection GetServices () {
+            IServiceCollection services = new ServiceCollection ();
+
+            services.AddScoped<IDistanceLocalizer, DistanceLocalizer> ();
+
+            // Old dependency injection
+            services.AddDbContext<InsuranceDbContext> ();
+            services.AddScoped<IRepository, Repository> ();
+            services.AddScoped<IManager, Manager> ();
+            services.AddScoped<Program> ();
+
+            return services;
+        }
+
+        private void UpdateCulture (CultureInfo info) {
+            Thread.CurrentThread.CurrentCulture = info;
+            Thread.CurrentThread.CurrentUICulture = info;
+        }
+
+        public Program(IManager manager)
         {
-            //_manager = new Manager(new InMemoryRepository());
-            _manager = new Manager(new Repository(new InsuranceDbContext()));
+            UpdateCulture (supportedCultures[0]);
+            _manager = manager;
         }
 
         public static void Main(string[] args)
         {
-            new Program().Run();
+            var services = GetServices();
+            var serviceProvider = services.BuildServiceProvider();
+            serviceProvider.GetService<Program> ()?.Run ();
         }
 
         private void Run()
@@ -28,22 +60,25 @@ namespace Insurance.UI.CA
             byte n;
             do
             {
-                Console.WriteLine("\n- Car Insurance -\nWhat would you like to do?\n==========================");
+                Console.WriteLine ();
+                Console.WriteLine ($"- {vlr.Car_Insurance} -");
+                Console.WriteLine (vlr.What_would_you_like_to_do);
+                Console.WriteLine ("==========================");
                 PrintMenu();
-                n = byte.Parse(Console.ReadLine() ?? "7");
+                n = byte.Parse(Console.ReadLine() ?? "-1");
                 Console.ResetColor();
                 switch (n)
                 {
                     case 0:
                         Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Goodbye.");
+                        Console.WriteLine(vlr.Exit_Message);
                         break;
                     case 1:
                         PrintAllCars();
                         break;
                     case 2:
                         PrintEnumWithIndex();
-                        PrintCarsByFuel(int.Parse(Console.ReadLine()));
+                        PrintCarsByFuel(int.Parse(Console.ReadLine() ?? "1"));
                         break;
 
                     case 3:
@@ -70,8 +105,12 @@ namespace Insurance.UI.CA
                         RemoveDriverFromCar();
                         break;
 
+                    case 9:
+                        SwitchCulture();
+                        break;
+
                     default:
-                        Console.WriteLine($"{n} is not a valid option.");
+                        Console.WriteLine($@"{n} {vlr.Not_A_Valid_Option}");
                         break;
                 }
             } while (n != 0);
@@ -81,10 +120,18 @@ namespace Insurance.UI.CA
 
         private static void PrintMenu()
         {
-            Console.WriteLine(
-                "0) Quit\n1) Show all cars\n2) Show cars by Fuel \n3) Show all drivers \n4) All drivers with name and/or date of birth\n5) Add a driver\n6) Add a car\n7) Add a driver to car\n8) Remove driver from car");
+            Console.WriteLine (vlr.Quit);
+            Console.WriteLine (vlr.Show_All_Cars);
+            Console.WriteLine (vlr.Show_Cars_By_Fuel);
+            Console.WriteLine (vlr.Show_All_Drivers);
+            Console.WriteLine (vlr.All_Drivers_Filtered);
+            Console.WriteLine (vlr.Add_Driver);
+            Console.WriteLine (vlr.Add_Car);
+            Console.WriteLine (vlr.Add_Driver_To_Car);
+            Console.WriteLine (vlr.Remove_Driver_From_Car);
+            Console.WriteLine (vlr.Switch_Culture);
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write("Choice (0-8): ");
+            Console.Write(vlr.Choice);
             Console.ResetColor();
         }
 
@@ -269,7 +316,7 @@ namespace Insurance.UI.CA
             Console.WriteLine("\nWhich car would you like to add a driver to?");
             foreach (var car in _manager.GetAllCarsWithGarage())
             {
-                Console.WriteLine($"[{car.NumberPlate}] {car.GetInfo()}");
+                Console.WriteLine(@$"[{car.NumberPlate}] {car.GetInfo()}");
             }
 
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -280,7 +327,7 @@ namespace Insurance.UI.CA
             Console.Write("Which driver would you like to add to this car?\n");
             foreach (var d in _manager.GetAllDriversWithCars())
             {
-                Console.Write($"[{d.SocialNumber}] {d.GetInfo(false)}");
+                Console.Write(@$"[{d.SocialNumber}] {d.GetInfo(false)}");
             }
 
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -313,7 +360,7 @@ namespace Insurance.UI.CA
             Console.WriteLine("\nWhich car would you like to remove a driver from?");
             foreach (var car in _manager.GetAllCarsWithGarage())
             {
-                Console.WriteLine($"[{car.NumberPlate}] {car.GetInfo()}");
+                Console.WriteLine(@$"[{car.NumberPlate}] {car.GetInfo()}");
             }
 
             Console.ForegroundColor = ConsoleColor.Blue;
@@ -325,7 +372,7 @@ namespace Insurance.UI.CA
             {
                 foreach (var d in _manager.GetDriversOfCar(carid))
                 {
-                    Console.Write($"[{d.SocialNumber}] {d.GetInfo(false)}");
+                    Console.Write(@$"[{d.SocialNumber}] {d.GetInfo(false)}");
                 }
             }
             catch (Exception e)
@@ -349,6 +396,28 @@ namespace Insurance.UI.CA
             }
 
             Console.ResetColor();
+        }
+
+        private void SwitchCulture () {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine (vlr.Possible_Cultures);
+            int index = 0;
+            supportedCultures.ForEach (culture => {
+                Console.Write (++index + @"): ");
+                Console.WriteLine (vlr.ResourceManager.GetString (culture.Name));
+            });
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write ("Pick a culture: ");
+            if (int.TryParse (Console.ReadLine(), out index) && 0 < index && index <= supportedCultures.Count) {
+                Console.ForegroundColor= ConsoleColor.Green;
+                UpdateCulture (supportedCultures [index - 1]);
+                Console.Write ("Updated culture to ");
+                Console.WriteLine (vlr.ResourceManager.GetString (Thread.CurrentThread.CurrentUICulture.Name));
+            } else {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine ("That's not a valid culture, please try again.");
+            }
+            Console.ResetColor ();
         }
     }
 }

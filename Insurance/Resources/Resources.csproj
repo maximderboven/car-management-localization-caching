@@ -16,6 +16,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>PropertyResources.resx</DependentUpon>
     </Compile>
+    <Compile Update="ViewLocalizationResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ViewLocalizationResources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -26,6 +31,10 @@
     <EmbeddedResource Update="PropertyResources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>PropertyResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ViewLocalizationResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewLocalizationResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
