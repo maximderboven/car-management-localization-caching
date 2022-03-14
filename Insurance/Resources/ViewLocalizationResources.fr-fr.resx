@@ -20,4 +20,157 @@
     <data name="fr-FR" xml:space="preserve">
         <value>Français</value>
     </data>
+    <data name="AddCar_Choose_garage" xml:space="preserve">
+        <value>Choisissez un garage :</value>
+    </data>
+    <data name="Add_a_Car" xml:space="preserve">
+        <value>Ajouter une voiture</value>
+    </data>
+    <data name="Add_Car" xml:space="preserve">
+        <value>6) Ajouter une voiture</value>
+    </data>
+    <data name="Add_a_driver" xml:space="preserve">
+        <value>Ajouter un conducteur</value>
+    </data>
+    <data name="Add_Car_Failed" xml:space="preserve">
+        <value>Impossible d'ajouter une nouvelle voiture :</value>
+    </data>
+    <data name="Add_Car_Succes" xml:space="preserve">
+        <value>Ajouté une nouvelle voiture avec succès.</value>
+    </data>
+    <data name="Add_Driver" xml:space="preserve">
+        <value>5) Ajouter un pilote</value>
+    </data>
+    <data name="Add_Driver_Failed" xml:space="preserve">
+        <value>Impossible d'ajouter un nouveau pilote :</value>
+    </data>
+    <data name="Add_Driver_Succes" xml:space="preserve">
+        <value>Ajouté un nouveau conducteur avec succès.</value>
+    </data>
+    <data name="Add_Driver_To_Car" xml:space="preserve">
+        <value>7) Ajouter un pilote à la voiture</value>
+    </data>
+    <data name="Add_Rental" xml:space="preserve">
+        <value>Ajouter une nouvelle location</value>
+    </data>
+    <data name="All_Cars" xml:space="preserve">
+        <value>Toutes les voitures</value>
+    </data>
+    <data name="All_Drivers" xml:space="preserve">
+        <value>Tous les conducteurs</value>
+    </data>
+    <data name="All_Drivers_Filtered" xml:space="preserve">
+        <value>4) Tous les conducteurs avec nom et/ou date de naissance</value>
+    </data>
+    <data name="Amount_of_miles_on_count_" xml:space="preserve">
+        <value>Nombre de kilomètres au compteur :</value>
+    </data>
+    <data name="Amount_Of_Seats" xml:space="preserve">
+        <value>Nombre de sièges :</value>
+    </data>
+    <data name="Brand" xml:space="preserve">
+        <value>Marque</value>
+    </data>
+    <data name="Car_Insurance" xml:space="preserve">
+        <value>Assurance automobile</value>
+    </data>
+    <data name="Choice" xml:space="preserve">
+        <value>Choix (0, 9) : </value>
+    </data>
+    <data name="Culture_Invalid" xml:space="preserve">
+        <value>Ce n'est pas une culture valide, veuillez réessayer.</value>
+    </data>
+    <data name="Date_Of_Birth" xml:space="preserve">
+        <value>Date de naissance (mm/jj/aaaa) : </value>
+    </data>
+    <data name="Driver_Not_Exist" xml:space="preserve">
+        <value>Ce conducteur n'existe pas. Veuillez réessayer.</value>
+    </data>
+    <data name="Enter_a_full_date__yyyy_mm_dd__or_leave_blank__" xml:space="preserve">
+        <value>Entrez une date complète (aaaa/mm/jj) ou laissez vide : </value>
+    </data>
+    <data name="Enter_Car_ID" xml:space="preserve">
+        <value>Veuillez saisir un identifiant de voiture : </value>
+    </data>
+    <data name="Enter_part_of_a_name_or_leave_blank_" xml:space="preserve">
+        <value>Entrez (une partie) d'un nom ou laissez vide :</value>
+    </data>
+    <data name="Exit_Message" xml:space="preserve">
+        <value>Au revoir</value>
+    </data>
+    <data name="Failed" xml:space="preserve">
+        <value>Un problème est survenu, veuillez réessayer.</value>
+    </data>
+    <data name="FirstName" xml:space="preserve">
+        <value>prénom : </value>
+    </data>
+    <data name="Fuel" xml:space="preserve">
+        <value>Carburant</value>
+    </data>
+    <data name="Garage" xml:space="preserve">
+        <value>Garage</value>
+    </data>
+    <data name="How_much_does_the_rental_cost" xml:space="preserve">
+        <value>Combien coûte la location : </value>
+    </data>
+    <data name="lastName" xml:space="preserve">
+        <value>nom : </value>
+    </data>
+    <data name="Not_A_Valid_Option" xml:space="preserve">
+        <value>n'est pas une option valable.</value>
+    </data>
+    <data name="Optional" xml:space="preserve">
+        <value>optionnel</value>
+    </data>
+    <data name="Please_enter_a_driver_ID" xml:space="preserve">
+        <value>Veuillez entrer un numéro d'identification du conducteur : </value>
+    </data>
+    <data name="PurchasePrice" xml:space="preserve">
+        <value>Prix d'achat</value>
+    </data>
+    <data name="Possible_Cultures" xml:space="preserve">
+        <value>Cultures possibles :</value>
+    </data>
+    <data name="Quit" xml:space="preserve">
+        <value>0) Quitter</value>
+    </data>
+    <data name="Remove_Driver_From_Car" xml:space="preserve">
+        <value>8) Retirer le conducteur de la voiture</value>
+    </data>
+    <data name="Remove_Rental" xml:space="preserve">
+        <value>Retirer une location</value>
+    </data>
+    <data name="Select_Car_Drive_Removal" xml:space="preserve">
+        <value>De quelle voiture souhaitez-vous retirer le conducteur ?</value>
+    </data>
+    <data name="Select_Culture" xml:space="preserve">
+        <value>Choisissez une culture : </value>
+    </data>
+    <data name="Select_Driver_Car_Removal" xml:space="preserve">
+        <value>Quel conducteur voulez-vous retirer de cette voiture ?</value>
+    </data>
+    <data name="Show_All_Cars" xml:space="preserve">
+        <value>1) Afficher toutes les voitures</value>
+    </data>
+    <data name="Show_All_Drivers" xml:space="preserve">
+        <value>3) Afficher tous les conducteurs</value>
+    </data>
+    <data name="Show_Cars_By_Fuel" xml:space="preserve">
+        <value>2) Afficher les voitures par carburant</value>
+    </data>
+    <data name="Switch_Culture" xml:space="preserve">
+        <value>9) Changer de culture</value>
+    </data>
+    <data name="Updated_Culture" xml:space="preserve">
+        <value>Culture mise à jour en </value>
+    </data>
+    <data name="What_would_you_like_to_do" xml:space="preserve">
+        <value>Que souhaitez-vous faire ?</value>
+    </data>
+    <data name="Which_car_would_you_like_to_add_a_driver_to_" xml:space="preserve">
+        <value>À quelle voiture souhaitez-vous ajouter un conducteur ?</value>
+    </data>
+    <data name="Which_driver_would_you_like_to_add_to_this_car" xml:space="preserve">
+        <value>Quel conducteur souhaitez-vous ajouter à cette voiture ?</value>
+    </data>
 </root>
