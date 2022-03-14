@@ -120,4 +120,19 @@
   <data name="Required" xml:space="preserve">
     <value>'{0}' est requise.</value>
   </data>
+  <data name="After" xml:space="preserve">
+    <value>'{0}' doit être après '{1}'.</value>
+  </data>
+  <data name="Before" xml:space="preserve">
+    <value>'{0}' doit être placé avant '{1}'.</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>'{0}' doit être compris entre {1} et {2}.</value>
+  </data>
+  <data name="StringLength" xml:space="preserve">
+    <value>'{0}' doit être compris entre {1} et {2} caractères.</value>
+  </data>
+  <data name="TooLarge" xml:space="preserve">
+    <value>'{0}' est trop grand.</value>
+  </data>
 </root>
