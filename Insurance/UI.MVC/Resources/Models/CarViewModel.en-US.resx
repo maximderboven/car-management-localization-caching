@@ -123,4 +123,16 @@
   <data name="Fuel" xml:space="preserve">
     <value>Fuel</value>
   </data>
+  <data name="Garage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Mileage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PurchasePrice" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Seats" xml:space="preserve">
+    <value />
+  </data>
 </root>

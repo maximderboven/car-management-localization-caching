@@ -97,7 +97,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &apos;{0}&apos; must be between {1} chars and {2} chars..
+        ///   Looks up a localized string similar to &apos;{0}&apos; must be between {1} and {2} characters..
         /// </summary>
         public static string StringLength {
             get {

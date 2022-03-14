@@ -124,7 +124,7 @@
     <value>'{0}' must be between {1} and {2}.</value>
   </data>
   <data name="StringLength" xml:space="preserve">
-    <value>'{0}' must be between {1} chars and {2} chars.</value>
+    <value>'{0}' must be between {1} and {2} characters.</value>
   </data>
   <data name="TooLarge" xml:space="preserve">
     <value>That's too much.</value>

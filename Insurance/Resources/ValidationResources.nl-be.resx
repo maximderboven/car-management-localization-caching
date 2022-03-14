@@ -124,10 +124,10 @@
     <value>'{0}' moet tussen en {1} en {2} zijn.</value>
   </data>
   <data name="StringLength" xml:space="preserve">
-    <value>'{0}' must be between {1} karakters and {2} karakters.</value>
+    <value>'{0}' moet tussen {1} en {2} karakters.</value>
   </data>
   <data name="TooLarge" xml:space="preserve">
-    <value>'{0}' </value>
+    <value>'{0}' is te groot.</value>
   </data>
   <data name="Before" xml:space="preserve">
     <value>'{0}' moet voor '{1} zijn.'</value>
