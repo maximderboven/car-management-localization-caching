@@ -23,7 +23,8 @@ namespace UI.MVC.Models {
         ErrorMessageResourceName = "Required")]
         [Range (1, 7, ErrorMessageResourceType = typeof (ValidationResources),
         ErrorMessageResourceName = "Range")]
-        [Display (Name = "Seats")]
+        [Display (ResourceType = typeof(PropertyResources),
+            Name = "Seats")]
         public short Seats { get; set; }
 
         [Required (ErrorMessageResourceType = typeof (ValidationResources),
