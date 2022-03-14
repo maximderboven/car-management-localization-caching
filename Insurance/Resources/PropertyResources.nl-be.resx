@@ -14,4 +14,10 @@
     <data name="Seats" xml:space="preserve">
         <value>Zetels</value>
     </data>
+    <data name="Brand" xml:space="preserve">
+        <value>Merk</value>
+    </data>
+    <data name="NumberPlate" xml:space="preserve">
+        <value>Nummerplaat</value>
+    </data>
 </root>

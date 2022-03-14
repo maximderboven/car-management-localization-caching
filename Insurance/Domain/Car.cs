@@ -11,8 +11,10 @@ namespace Insurance.Domain
         [Required(ErrorMessageResourceType = typeof (ValidationResources),
             ErrorMessageResourceName = "Required")]
         [StringLength(20, ErrorMessage = "Error: Brand min. 2 CHAR & max. 20 CHAR ", MinimumLength = 2)]
+        [Display (ResourceType = typeof(PropertyResources), Name = "Brand")]
         public string Brand { get; set; }
 
+        [Display (ResourceType = typeof(PropertyResources), Name = "NumberPlate")]
         [Key] public int NumberPlate { get; set; }
         public Fuel Fuel { get; set; }
 

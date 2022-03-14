@@ -14,4 +14,10 @@
     <data name="Seats" xml:space="preserve">
         <value>Seats</value>
     </data>
+    <data name="Brand" xml:space="preserve">
+        <value>Brand</value>
+    </data>
+    <data name="NumberPlate" xml:space="preserve">
+        <value>Numberplate</value>
+    </data>
 </root>
