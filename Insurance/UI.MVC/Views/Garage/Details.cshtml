@@ -1,4 +1,5 @@
-﻿@using Microsoft.AspNetCore.Mvc.Localization
+﻿@using Insurance.Domain
+@using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer _localizer
 @model Insurance.Domain.Garage
 
@@ -10,22 +11,26 @@
 <h2>@_localizer["Garage Details"]</h2>
 <div class="form-row">
     <div class="form-group col-md-1">
-      <label for="id">@_localizer["Id"]</label>
+      <label for="id">@Html.LabelFor(garage => garage.Id)</label>
       <input type="number" class="form-control" id="id" disabled>
+      <span class="text-danger">@Html.ValidationMessageFor(garage => garage.Id)</span>
     </div>
     <div class="form-group col-md-5">
-      <label for="name">@_localizer["Name"]</label>
+      <label for="name">@Html.LabelFor(garage => garage.Name)</label>
       <input type="text" class="form-control" id="name" required>
+      <span class="text-danger">@Html.ValidationMessageFor(garage => garage.Name)</span> 
     </div>
     <div class="form-group col-md-6">
-      <label for="telnr">@_localizer["Telnr"]</label>
+      <label for="telnr">@Html.LabelFor(garage => garage.Telnr)</label>
       <!-- pattern="+32[0-9]{9}" -->
       <input   type="tel" class="form-control" id="telnr" required>
+      <span class="text-danger">@Html.ValidationMessageFor(garage => garage.Telnr)</span> 
     </div>
   </div>
 <div class="form-group">
-  <label for="address">@_localizer["Address"]</label>
+  <label for="address">@Html.LabelFor(garage => garage.Adress)</label>
   <input type="text" class="form-control" id="address" required>
+  <span class="text-danger">@Html.ValidationMessageFor(garage => garage.Adress)</span> 
 </div>
 <button id="editgarage" class="btn btn-primary">@_localizer["Edit"]</button>
 <div class="alert alert-success invisible" role="alert" id="successfully">

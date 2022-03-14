@@ -2,6 +2,7 @@
 using System.Linq;
 using Distances;
 using Insurance.BL;
+using Insurance.Domain;
 using Microsoft.AspNetCore.Mvc;
 using UI.MVC.Models;
 
@@ -35,7 +36,7 @@ namespace UI.MVC.Controllers
         }
 
         [HttpGet]
-        [ResponseCache(Duration = 30, Location = ResponseCacheLocation.Any, NoStore = false, VaryByHeader = "id")]
+        [ResponseCache(Duration = 30, Location = ResponseCacheLocation.Any, NoStore = false, VaryByQueryKeys = new string[] { "numberplate" })]
         public IActionResult Details(int numberplate)
         {
             //ViewBag.drivers = _manager.GetDriversOfCar(numberplate);

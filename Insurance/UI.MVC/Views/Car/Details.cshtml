@@ -30,9 +30,9 @@
     <tr>
         <th>@_localizer["Purchaseprice"]</th>
         @{
-            var purchasePrice = Model.PurchasePrice != null ? ((double)Model.PurchasePrice).ToString ("c") : @_localizer["Not Known"].ToString ();
+            var pPrice = Model.PurchasePrice != null ? ((double)Model.PurchasePrice).ToString ("c") : @_localizer["Not Known"].Value;
         }
-        <td>@purchasePrice</td>
+        <td>@pPrice</td>
     </tr>
 </table>
 
