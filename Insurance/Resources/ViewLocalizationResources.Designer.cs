@@ -205,6 +205,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to born on {0}.
+        /// </summary>
+        public static string Born_On_Date {
+            get {
+                return ResourceManager.GetString("Born_On_Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Brand.
         /// </summary>
         public static string Brand {
@@ -331,6 +340,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to From.
+        /// </summary>
+        public static string From {
+            get {
+                return ResourceManager.GetString("From", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Fuel.
         /// </summary>
         public static string Fuel {
@@ -349,6 +367,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Car with numberplate: {0} from {1} - on{2} {3}.
+        /// </summary>
+        public static string GetInfo_Car {
+            get {
+                return ResourceManager.GetString("GetInfo_Car", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to How much does the rental cost: .
         /// </summary>
         public static string How_much_does_the_rental_cost {
@@ -363,6 +390,15 @@ namespace Resources {
         public static string lastName {
             get {
                 return ResourceManager.GetString("lastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [Managed by garage &apos;{0}&apos;].
+        /// </summary>
+        public static string Managed_By_Garage {
+            get {
+                return ResourceManager.GetString("Managed_By_Garage", resourceCulture);
             }
         }
         

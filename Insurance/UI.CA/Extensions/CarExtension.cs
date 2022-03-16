@@ -1,4 +1,5 @@
 ﻿using Insurance.Domain;
+using Resources;
 
 namespace Insurance.UI.CA.Extensions
 {
@@ -6,7 +7,11 @@ namespace Insurance.UI.CA.Extensions
     {
         internal static string GetInfo(this Car c)
         {
-            return c.Garage != null ? $"Car with numberplate: {c.NumberPlate} from {c.Brand} - on {c.Fuel.ToString()} [Managed by garage '{c.Garage.Name}'] {c.PurchasePrice}" : $"Car with numberplate: {c.NumberPlate} from {c.Brand} - on {c.Fuel.ToString()} {c.PurchasePrice}";
+            string garage = c.Garage != null
+                ? string.Format(ViewLocalizationResources.Managed_By_Garage, c.Garage)
+                : string.Empty;
+            return string.Format (ViewLocalizationResources.GetInfo_Car,
+                c.NumberPlate, c.Brand, c.Fuel, garage, c.PurchasePrice);
         }
 
     }
