@@ -48,7 +48,7 @@
         <value>8) Remove driver from car</value>
     </data>
     <data name="Switch_Culture" xml:space="preserve">
-        <value>8) Remove driver from car</value>
+        <value>9) Switch culture</value>
     </data>
     <data name="Show_Cars_By_Fuel" xml:space="preserve">
         <value>2) Show cars by Fuel</value>
