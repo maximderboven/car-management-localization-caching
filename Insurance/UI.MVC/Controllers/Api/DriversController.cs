@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics;
 using System.Linq;
 using Insurance.BL;
 using Insurance.Domain;
@@ -22,6 +23,7 @@ namespace UI.MVC.Controllers.Api
         
         // GET
         [HttpGet("dropdown/{id:int}")]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult GetDropdown(int id)
         {
             var responses = _manager.GetCarsWithoutDriver(id);

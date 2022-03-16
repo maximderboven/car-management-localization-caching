@@ -42,7 +42,9 @@ namespace UI.MVC.Controllers.Api
             
             return Ok(garageDto);
         }
+        
         [HttpGet]
+        [ResponseCache(Duration = 15, Location = ResponseCacheLocation.Any)]
         public IActionResult Get()
         {
             var responses = _manager.GetAllGarages();
@@ -64,7 +66,7 @@ namespace UI.MVC.Controllers.Api
             return Ok(garageDto);
         }
         
-        // POST: api/TicketResponses
+        // POST:
         [HttpPost]
         public IActionResult Post(NewGarageDTO response)
         {

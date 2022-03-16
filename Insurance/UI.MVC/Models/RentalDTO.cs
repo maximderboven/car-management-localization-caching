@@ -20,7 +20,7 @@ namespace UI.MVC.Models
         public DateTime EndDate { get; set; }
         [Display(ResourceType = typeof(PropertyResources), Name = "NumberPlate")]
         public int NumberPlate { get; set; }
-        [Display(ResourceType = typeof(PropertyResources), Name = "Socialnumber")]
+        [Display(ResourceType = typeof(PropertyResources), Name = "SocialNumber")]
         public int Socialnumber { get; set; }
         
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
