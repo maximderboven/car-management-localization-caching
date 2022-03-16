@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Threading;
 using Distances;
 using Insurance.BL;
 using Insurance.Domain;
@@ -23,9 +24,10 @@ namespace UI.MVC.Controllers
         }
 
         [HttpGet]
-        [ResponseCache(Duration = 10, Location = ResponseCacheLocation.Any, NoStore = false)]
+        [ResponseCache(Duration = 10, Location = ResponseCacheLocation.Any, NoStore = false, VaryByHeader = "X-Culture")]
         public IActionResult Index()
         {
+            HttpContext.Response.Headers.Add("X-Culture",Thread.CurrentThread.CurrentUICulture.ToString());
             return View(_manager.GetAllCars());
         }
 
