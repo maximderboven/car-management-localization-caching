@@ -43,7 +43,7 @@ namespace Insurance.DAL.EF
             bool AlreadyExist = _memoryCache.TryGetValue("AllCars", out allCars);
             if (!AlreadyExist)
             {
-                allCars = _context.Cars.AsEnumerable();
+                allCars = _context.Cars.ToArray();
                 _memoryCache.Set("AllCars", allCars,
                     new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(5))
                         .SetAbsoluteExpiration(TimeSpan.FromSeconds(20)));
@@ -121,7 +121,7 @@ namespace Insurance.DAL.EF
             bool AlreadyExist = _memoryCache.TryGetValue("allCarsWithGarage", out allCarsWithGarage);
             if (!AlreadyExist)
             {
-                allCarsWithGarage = _context.Cars.Include(c => c.Garage);
+                allCarsWithGarage = _context.Cars.Include(c => c.Garage).ToArray();
                 _memoryCache.Set("allCarsWithGarage", allCarsWithGarage,
                     new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(5))
                         .SetAbsoluteExpiration(TimeSpan.FromSeconds(20)));
