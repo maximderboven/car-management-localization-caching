@@ -98,6 +98,11 @@ namespace Insurance.BL
             return _repo.ReadCarWithDrivers(numberplate);
         }
 
+        public Driver GetYoungestDriver()
+        {
+            return _repo.GetYoungestDriver();
+        }
+
         public Garage AddGarage(string name, string adress, string telnr)
         {
             var garage = new Garage(name, adress, telnr);

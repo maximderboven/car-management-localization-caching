@@ -27,5 +27,6 @@ namespace Insurance.DAL
         public IEnumerable<Car> ReadCarsOfDriver(int socialnumber);
         public bool ChangeGarage(Garage garage);
         public Car ReadCarWithDrivers(int numberplate);
+        public Driver GetYoungestDriver();
     }
 }

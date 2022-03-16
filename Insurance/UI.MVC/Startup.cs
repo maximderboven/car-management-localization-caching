@@ -48,6 +48,8 @@ namespace UI.MVC {
             services.AddResponseCaching();
             services.AddMvc();
 
+            services.AddMemoryCache();
+
 
             services.AddScoped<IDistanceLocalizer, DistanceLocalizer> ();
             services.AddScoped<IDoubleParser, DoubleParser> ();

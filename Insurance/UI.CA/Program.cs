@@ -27,6 +27,7 @@ namespace Insurance.UI.CA {
             IServiceCollection services = new ServiceCollection ();
 
             services.AddScoped<IDistanceLocalizer, DistanceLocalizer> ();
+            services.AddMemoryCache();
 
             // Old dependency injection
             services.AddDbContext<InsuranceDbContext> ();

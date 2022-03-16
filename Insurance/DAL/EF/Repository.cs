@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Insurance.Domain;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 #nullable enable
 namespace Insurance.DAL.EF
@@ -10,21 +11,44 @@ namespace Insurance.DAL.EF
     public class Repository : IRepository
     {
         private readonly InsuranceDbContext _context;
+        private IMemoryCache _memoryCache;
 
-        public Repository(InsuranceDbContext ctx)
+        public Repository(InsuranceDbContext ctx, IMemoryCache memoryCache)
         {
             _context = ctx;
+            _memoryCache = memoryCache;
         }
 
+        //cachen
         public Car ReadCar(int numberplate)
         {
             //return _context.Cars.Find(numberplate);
-            return _context.Cars.Single(c => c.NumberPlate.Equals(numberplate));
+            Car car;
+            bool AlreadyExist = _memoryCache.TryGetValue(numberplate, out car);
+            if (!AlreadyExist)
+            {
+                car = _context.Cars.Single(c => c.NumberPlate.Equals(numberplate));
+                _memoryCache.Set(numberplate, car,
+                    new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(5))
+                        .SetAbsoluteExpiration(TimeSpan.FromSeconds(20)));
+            }
+            return car;
         }
 
+        //cachen
         public IEnumerable<Car> ReadAllCars()
         {
-            return _context.Cars.AsEnumerable();
+            //return _context.Cars.Find(numberplate);
+            IEnumerable<Car> allCars;
+            bool AlreadyExist = _memoryCache.TryGetValue("AllCars", out allCars);
+            if (!AlreadyExist)
+            {
+                allCars = _context.Cars.AsEnumerable();
+                _memoryCache.Set("AllCars", allCars,
+                    new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(5))
+                        .SetAbsoluteExpiration(TimeSpan.FromSeconds(20)));
+            }
+            return allCars;
         }
 
         public IEnumerable<Car> ReadCarsOf(Fuel fuel)
@@ -93,7 +117,16 @@ namespace Insurance.DAL.EF
 
         public IEnumerable<Car> ReadAllCarsWithGarage()
         {
-            return _context.Cars.Include(c => c.Garage);
+            IEnumerable<Car> allCarsWithGarage;
+            bool AlreadyExist = _memoryCache.TryGetValue("allCarsWithGarage", out allCarsWithGarage);
+            if (!AlreadyExist)
+            {
+                allCarsWithGarage = _context.Cars.Include(c => c.Garage);
+                _memoryCache.Set("allCarsWithGarage", allCarsWithGarage,
+                    new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(5))
+                        .SetAbsoluteExpiration(TimeSpan.FromSeconds(20)));
+            }
+            return allCarsWithGarage;
         }
 
         public IEnumerable<Driver> ReadAllDriversWithCars()
@@ -143,6 +176,11 @@ namespace Insurance.DAL.EF
         public Car ReadCarWithDrivers(int numberplate)
         {
             return _context.Cars.Include(c => c.Rentals).ThenInclude(r => r.Driver).Single(c => c.NumberPlate.Equals(numberplate));
+        }
+
+        public Driver GetYoungestDriver()
+        {
+            return _context.Drivers.OrderByDescending(d => d.DateOfBirth).First();
         }
 
         public IEnumerable<Car> ReadCarsWithoutDriver(int socialnumber)

@@ -40,6 +40,11 @@ namespace Insurance.DAL
             throw new NotImplementedException();
         }
 
+        public Driver GetYoungestDriver()
+        {
+            throw new NotImplementedException();
+        }
+
         public Car ReadCar(int numberplate)
         {
             return _cars.Single(car => car.NumberPlate.Equals(numberplate));

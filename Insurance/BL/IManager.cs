@@ -28,5 +28,7 @@ namespace Insurance.BL
         public bool ChangeGarage(Garage garage);
 
         public Car GetCarWithDrivers(int numberplate);
+
+        public Driver GetYoungestDriver();
     }
 }
