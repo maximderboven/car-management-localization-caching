@@ -169,4 +169,8 @@
       <value>Details</value>
       <comment>Details</comment>
   </data>
+  <data name="Last Searched Data" xml:space="preserve">
+    <value>Laatste data opgezocht</value>
+    <comment>Last Searched Data</comment>
+  </data>
 </root>
