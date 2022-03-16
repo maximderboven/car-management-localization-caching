@@ -217,7 +217,7 @@
     <value>optional</value>
   </data>
   <data name="Brand" xml:space="preserve">
-    <value>Brand</value>
+      <value>Brand</value>
   </data>
   <data name="Amount_Of_Seats" xml:space="preserve">
     <value>Amount of seats:</value>
@@ -247,7 +247,7 @@
     <value>Please enter an car ID: </value>
   </data>
   <data name="Failed" xml:space="preserve">
-    <value>Something went wrong, please try again.</value>
+      <value>Something went wrong, please try again.</value>
   </data>
   <data name="Remove_Rental" xml:space="preserve">
     <value>Remove a rental</value>

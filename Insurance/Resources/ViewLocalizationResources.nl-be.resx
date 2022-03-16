@@ -27,9 +27,162 @@
         <value>Frans</value>
     </data>
     <data name="Choice" xml:space="preserve">
-        <value>Keuze (0, 9):</value>
+        <value>Keuze (0, 9): </value>
     </data>
     <data name="Add_Car" xml:space="preserve">
         <value>6) Voeg een auto toe</value>
+    </data>
+    <data name="AddCar_Choose_garage" xml:space="preserve">
+        <value>Kies een garage: </value>
+    </data>
+    <data name="Add_a_Car" xml:space="preserve">
+        <value>Voeg een auto toe</value>
+    </data>
+    <data name="Add_a_driver" xml:space="preserve">
+        <value>Voeg een bestuurder toe</value>
+    </data>
+    <data name="Brand" xml:space="preserve">
+        <value>Merk</value>
+    </data>
+    <data name="Enter_a_full_date__yyyy_mm_dd__or_leave_blank__" xml:space="preserve">
+        <value>Voeg een datum toe (yyyy/mm/dd) of laat leeg: </value>
+    </data>
+    <data name="Add_Car_Failed" xml:space="preserve">
+        <value>Het is niet mogelijk om een nieuwe auto toe te voegen: </value>
+    </data>
+    <data name="Add_Car_Succes" xml:space="preserve">
+        <value>Met succes een nieuwe auto toegevoegd.</value>
+    </data>
+    <data name="Add_Driver" xml:space="preserve">
+        <value>5) Voeg een auto toe</value>
+    </data>
+    <data name="Add_Driver_Failed" xml:space="preserve">
+        <value>Kan geen nieuwe bestuurder toevoegen: </value>
+    </data>
+    <data name="Add_Driver_Succes" xml:space="preserve">
+        <value>Met succes een nieuwe bestuurder toegevoegd.</value>
+    </data>
+    <data name="Add_Driver_To_Car" xml:space="preserve">
+        <value>7) Voeg een bestuurder toe aan een auto</value>
+    </data>
+    <data name="Add_Rental" xml:space="preserve">
+        <value>Nieuw verhuur toevoegen</value>
+    </data>
+    <data name="All_Cars" xml:space="preserve">
+        <value>Alle auto's</value>
+    </data>
+    <data name="All_Drivers" xml:space="preserve">
+        <value>Alle bestuurders</value>
+    </data>
+    <data name="All_Drivers_Filtered" xml:space="preserve">
+        <value>4) Alle bestuurders met een naam en/of geboortedatum</value>
+    </data>
+    <data name="Amount_of_miles_on_count_" xml:space="preserve">
+        <value>Kilometerstand: </value>
+    </data>
+    <data name="Amount_Of_Seats" xml:space="preserve">
+        <value>Hoeveel zetels: </value>
+    </data>
+    <data name="Born_On_Date" xml:space="preserve">
+        <value>geboren op {0}</value>
+    </data>
+    <data name="Car_Insurance" xml:space="preserve">
+        <value>Autoverzekering</value>
+    </data>
+    <data name="Culture_Invalid" xml:space="preserve">
+        <value>Dat is geen geldige cultuur, probeer het opnieuw.</value>
+    </data>
+    <data name="Date_Of_Birth" xml:space="preserve">
+        <value>Geboortedatum (mm/dd/yyyy): </value>
+    </data>
+    <data name="Driver_Not_Exist" xml:space="preserve">
+        <value>Deze bestuurder bestaat niet. Probeer het opnieuw.</value>
+    </data>
+    <data name="Enter_Car_ID" xml:space="preserve">
+        <value>Geef een auto ID in: </value>
+    </data>
+    <data name="Enter_part_of_a_name_or_leave_blank_" xml:space="preserve">
+        <value>Geef een (stuk van een) naam of laat leeg: </value>
+    </data>
+    <data name="Failed" xml:space="preserve">
+        <value>Er is iets fout gegaan, probeer het opnieuw.</value>
+    </data>
+    <data name="FirstName" xml:space="preserve">
+        <value>voornaam: </value>
+    </data>
+    <data name="From" xml:space="preserve">
+        <value>Van</value>
+    </data>
+    <data name="Fuel" xml:space="preserve">
+        <value>Brandstof</value>
+    </data>
+    <data name="Garage" xml:space="preserve">
+        <value>Garage</value>
+    </data>
+    <data name="GetInfo_Car" xml:space="preserve">
+        <value>Auto met nummerplaat: {0} van {1} - on{2} {3}</value>
+    </data>
+    <data name="How_much_does_the_rental_cost" xml:space="preserve">
+        <value>Hoeveel kost het verhuur: </value>
+    </data>
+    <data name="lastName" xml:space="preserve">
+        <value>naam: </value>
+    </data>
+    <data name="Managed_By_Garage" xml:space="preserve">
+        <value>[Beheerd door garage '{0}']</value>
+    </data>
+    <data name="Not_A_Valid_Option" xml:space="preserve">
+        <value>is geen geldige optie.</value>
+    </data>
+    <data name="Optional" xml:space="preserve">
+        <value>optioneel</value>
+    </data>
+    <data name="Please_enter_a_driver_ID" xml:space="preserve">
+        <value>Geef een bestuurder ID in: </value>
+    </data>
+    <data name="Possible_Cultures" xml:space="preserve">
+        <value>Mogelijk culturen: </value>
+    </data>
+    <data name="PurchasePrice" xml:space="preserve">
+        <value>Aankoopprijs</value>
+    </data>
+    <data name="Quit" xml:space="preserve">
+        <value>0) Stop</value>
+    </data>
+    <data name="Remove_Driver_From_Car" xml:space="preserve">
+        <value>8) Verwijder een bestuurder van een auto</value>
+    </data>
+    <data name="Remove_Rental" xml:space="preserve">
+        <value>Verwijder een verhuur</value>
+    </data>
+    <data name="Select_Car_Drive_Removal" xml:space="preserve">
+        <value>Welke auto wil je een bestuurder van weghalen?</value>
+    </data>
+    <data name="Select_Culture" xml:space="preserve">
+        <value>Selecteer een cultuur: </value>
+    </data>
+    <data name="Select_Driver_Car_Removal" xml:space="preserve">
+        <value>Welke bestuurder wil je een auto van verwijderen?</value>
+    </data>
+    <data name="Show_All_Cars" xml:space="preserve">
+        <value>1) Toon alle auto's</value>
+    </data>
+    <data name="Show_All_Drivers" xml:space="preserve">
+        <value>3) Toon alle bestuurders</value>
+    </data>
+    <data name="Show_Cars_By_Fuel" xml:space="preserve">
+        <value>2) Toon auto's met brandstof</value>
+    </data>
+    <data name="Switch_Culture" xml:space="preserve">
+        <value>9) Verander van cultuur</value>
+    </data>
+    <data name="Updated_Culture" xml:space="preserve">
+        <value>Cultuur aangepast naar </value>
+    </data>
+    <data name="Which_car_would_you_like_to_add_a_driver_to_" xml:space="preserve">
+        <value>Aan welke bestuurder wil je een auto toevoegen?</value>
+    </data>
+    <data name="Which_driver_would_you_like_to_add_to_this_car" xml:space="preserve">
+        <value>Welke bestuurder wil je aan deze auto toevoegen?</value>
     </data>
 </root>
