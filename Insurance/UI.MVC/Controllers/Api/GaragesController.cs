@@ -1,9 +1,13 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Text.Json;
+using System.Threading.Tasks;
 using Insurance.BL;
 using Insurance.Domain;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using UI.MVC.Models;
 
 namespace UI.MVC.Controllers.Api
@@ -12,11 +16,13 @@ namespace UI.MVC.Controllers.Api
     [Route("api/[controller]")]
     public class GaragesController : ControllerBase
     {
+        private IDistributedCache _distributedCache;
         private readonly IManager _manager;
 
-        public GaragesController(IManager manager)
+        public GaragesController(IManager manager,IDistributedCache distributedCache)
         {
             _manager = manager;
+            _distributedCache = distributedCache;
         }
         
         // [HttpGet]
@@ -43,28 +49,61 @@ namespace UI.MVC.Controllers.Api
             return Ok(garageDto);
         }
         
+        
         [HttpGet]
-        [ResponseCache(Duration = 15, Location = ResponseCacheLocation.Any)]
-        public IActionResult Get()
+        public async Task<IEnumerable<Garage>> GetGarages()
         {
-            var responses = _manager.GetAllGarages();
-            if (responses == null || !responses.Any())
-                return NoContent();
-            
-            var garageDto = new List<NewGarageDTO>();
-            foreach (var response in responses)
+            // Vind Cache Item
+            byte[] objectFromCache = await _distributedCache.GetAsync("GaragesKEY");
+
+            if (objectFromCache != null)
             {
-                garageDto.Add(new NewGarageDTO()
+                // Deserialize
+                var jsonToDeserialize = System.Text.Encoding.UTF8.GetString(objectFromCache);
+                var cachedResult = JsonSerializer.Deserialize<IEnumerable<Garage>>(jsonToDeserialize);
+                if (cachedResult != null)
                 {
-                    Id = response.Id,
-                    Telnr = response.Telnr,
-                    Adress = response.Adress,
-                    Name = response.Name
-                });
+                    return cachedResult;
+                }
             }
+
+            // Niet gevonden; opnieuw ophalen
+            var result = _manager.GetAllGarages();
             
-            return Ok(garageDto);
+            byte[] objectToCache = JsonSerializer.SerializeToUtf8Bytes(result);
+            var cacheEntryOptions = new DistributedCacheEntryOptions()
+                .SetSlidingExpiration(TimeSpan.FromDays(1))
+                .SetAbsoluteExpiration(TimeSpan.FromHours(10));
+
+            // Cache it
+            await _distributedCache.SetAsync("GaragesKEY", objectToCache, cacheEntryOptions);
+
+            return result;
         }
+        
+        
+        // [HttpGet]
+        // //[ResponseCache(Duration = 15, Location = ResponseCacheLocation.Any)]
+        // public IActionResult Get()
+        // {
+        //     var responses = GetGarages().Result;
+        //     if (responses == null || !responses.Any())
+        //         return NoContent();
+        //     
+        //     var garageDto = new List<NewGarageDTO>();
+        //     foreach (var response in responses)
+        //     {
+        //         garageDto.Add(new NewGarageDTO()
+        //         {
+        //             Id = response.Id,
+        //             Telnr = response.Telnr,
+        //             Adress = response.Adress,
+        //             Name = response.Name
+        //         });
+        //     }
+        //     
+        //     return Ok(garageDto);
+        // }
         
         // POST:
         [HttpPost]

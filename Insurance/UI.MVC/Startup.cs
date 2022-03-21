@@ -48,7 +48,12 @@ namespace UI.MVC {
             services.AddResponseCaching();
             services.AddMvc();
 
-            services.AddMemoryCache();
+            services.AddDistributedMemoryCache();
+
+            services.AddMemoryCache(/*options =>
+            {
+                options.SizeLimit = 1024;
+            }*/);
 
 
             services.AddScoped<IDistanceLocalizer, DistanceLocalizer> ();

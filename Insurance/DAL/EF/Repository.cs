@@ -29,7 +29,7 @@ namespace Insurance.DAL.EF
             {
                 car = _context.Cars.Single(c => c.NumberPlate.Equals(numberplate));
                 _memoryCache.Set(numberplate, car,
-                    new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(5))
+                    new MemoryCacheEntryOptions().SetSize(1).SetSlidingExpiration(TimeSpan.FromMinutes(5))
                         .SetAbsoluteExpiration(TimeSpan.FromSeconds(20)));
             }
             return car;
