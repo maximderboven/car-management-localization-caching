@@ -1,4 +1,5 @@
 ﻿using Insurance.Domain;
+using Insurance.Domain.Extensions;
 using Resources;
 
 namespace Insurance.UI.CA.Extensions
@@ -11,7 +12,7 @@ namespace Insurance.UI.CA.Extensions
                 ? string.Format(ViewLocalizationResources.Managed_By_Garage, c.Garage)
                 : string.Empty;
             return string.Format (ViewLocalizationResources.GetInfo_Car,
-                c.NumberPlate, c.Brand, c.Fuel, garage, c.PurchasePrice);
+                c.NumberPlate, c.Brand, c.Fuel.GetName (), garage, c.PurchasePrice);
         }
 
     }

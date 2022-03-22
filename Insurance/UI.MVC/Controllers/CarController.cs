@@ -24,11 +24,11 @@ namespace UI.MVC.Controllers
         }
 
         [HttpGet]
-        [ResponseCache(Duration = 10, Location = ResponseCacheLocation.Any, NoStore = false, VaryByHeader = "X-Culture")]
+        [ResponseCache (Duration = 10, Location = ResponseCacheLocation.Any, NoStore = false, VaryByHeader = "X-Culture")]
         public IActionResult Index()
         {
-            HttpContext.Response.Headers.Add("X-Culture",Thread.CurrentThread.CurrentUICulture.ToString());
-            return View(_manager.GetAllCars());
+            // HttpContext.Response.Headers.Add ("X-Culture", Thread.CurrentThread.CurrentUICulture.ToString ());
+            return View (_manager.GetAllCars ());
         }
 
         [HttpGet]

@@ -1,4 +1,5 @@
 ﻿@using Insurance.Domain
+@using Insurance.Domain.Extensions
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer _localizer
 @model Car
@@ -17,7 +18,7 @@
     </tr>
     <tr>
         <th>@_localizer["Fuel"]</th>
-        <td>@Model.Fuel</td>
+        <td>@Model.Fuel.GetName()</td>
     </tr>
     <tr>
         <th>@_localizer["Seats"]</th>

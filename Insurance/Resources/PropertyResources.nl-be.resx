@@ -68,4 +68,13 @@
     <data name="Name" xml:space="preserve">
         <value>Naam</value>
     </data>
+    <data name="Fuel_Oil" xml:space="preserve">
+        <value>Diesel</value>
+    </data>
+    <data name="Fuel_Gas" xml:space="preserve">
+        <value>Naft</value>
+    </data>
+    <data name="Fuel_Lpg" xml:space="preserve">
+        <value>Autogas</value>
+    </data>
 </root>

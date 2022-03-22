@@ -86,7 +86,7 @@ namespace Resources {
                 return ResourceManager.GetString("Car", resourceCulture);
             }
         }
-
+        
         /// <summary>
         ///   Looks up a localized string similar to Date of birth.
         /// </summary>
@@ -129,6 +129,33 @@ namespace Resources {
         public static string Fuel {
             get {
                 return ResourceManager.GetString("Fuel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gas.
+        /// </summary>
+        public static string Fuel_Gas {
+            get {
+                return ResourceManager.GetString("Fuel_Gas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lpg.
+        /// </summary>
+        public static string Fuel_Lpg {
+            get {
+                return ResourceManager.GetString("Fuel_Lpg", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oil.
+        /// </summary>
+        public static string Fuel_Oil {
+            get {
+                return ResourceManager.GetString("Fuel_Oil", resourceCulture);
             }
         }
         

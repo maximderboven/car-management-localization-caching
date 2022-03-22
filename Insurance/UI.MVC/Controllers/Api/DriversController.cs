@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using Insurance.BL;
 using Insurance.Domain;
+using Insurance.Domain.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using UI.MVC.Models;
 
@@ -36,7 +37,7 @@ namespace UI.MVC.Controllers.Api
                 {
                     Brand = response.Brand,
                     NumberPlate = response.NumberPlate,
-                    Fuel = response.Fuel.ToString(),
+                    Fuel = response.Fuel.GetName(),
                     Seats = response.Seats,
                     Mileage = response.Mileage,
                     Purchaseprice = response.PurchasePrice
@@ -58,7 +59,7 @@ namespace UI.MVC.Controllers.Api
                 {
                     Brand = response.Brand,
                     NumberPlate = response.NumberPlate,
-                    Fuel = response.Fuel.ToString(),
+                    Fuel = response.Fuel.GetName(),
                     Seats = response.Seats,
                     Mileage = response.Mileage,
                     Purchaseprice = response.PurchasePrice

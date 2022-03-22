@@ -3,6 +3,7 @@ using Insurance.BL;
 using Insurance.DAL;
 using Insurance.DAL.EF;
 using Insurance.Domain;
+using Insurance.Domain.Extensions;
 using Insurance.UI.CA.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -156,7 +157,7 @@ namespace Insurance.UI.CA {
             var enums = (Fuel[]) Enum.GetValues(typeof(Fuel));
             for (byte i = 0; i < enums.Length; i++)
             {
-                Console.Write (@$"{i + 1}={enums[i]},");
+                Console.Write (@$"{i + 1}={enums[i].GetName ()},");
             }
 
             Console.Write(@"\b): ");
