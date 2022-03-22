@@ -7,6 +7,7 @@ using Insurance.DAL.EF;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,7 +47,10 @@ namespace UI.MVC {
             
             //caching
             services.AddResponseCaching();
-            services.AddMvc();
+            services.AddTransient<CopyCultureCookieToRequestHeaderFilter> ();
+            services.AddMvc(options => {
+                options.Filters.AddService<CopyCultureCookieToRequestHeaderFilter> ();
+            });
 
             services.AddDistributedMemoryCache();
 
