@@ -30,7 +30,7 @@ namespace UI.MVC.Controllers
         [HttpPost]
         public IActionResult CultureManagement (string culture, string returnUrl) {
             Response.Cookies.Append (CookieRequestCultureProvider.DefaultCookieName, CookieRequestCultureProvider.MakeCookieValue (new RequestCulture (culture)),
-                new CookieOptions { Expires = DateTimeOffset.Now.AddDays (30) });
+                new CookieOptions { Expires = DateTimeOffset.MaxValue });
 
             return LocalRedirect (returnUrl);
         }

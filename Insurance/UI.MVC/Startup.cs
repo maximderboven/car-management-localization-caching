@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Options;
+using UI.MVC.ActionFilters;
 
 namespace UI.MVC {
     public class Startup {
@@ -47,9 +48,11 @@ namespace UI.MVC {
             
             //caching
             services.AddResponseCaching();
+            services.AddTransient<SetUserLanguageAsDefaultFilters> ();
             services.AddTransient<CopyCultureCookieToRequestHeaderFilter> ();
             services.AddMvc(options => {
-                options.Filters.AddService<CopyCultureCookieToRequestHeaderFilter> ();
+                options.Filters.AddService<SetUserLanguageAsDefaultFilters> (order: 1);
+                options.Filters.AddService<CopyCultureCookieToRequestHeaderFilter> (order: 2);
             });
 
             services.AddDistributedMemoryCache();

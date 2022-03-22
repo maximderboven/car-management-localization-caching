@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace UI.MVC {
+namespace UI.MVC.ActionFilters {
 
     public class CopyCultureCookieToRequestHeaderFilter : IActionFilter {
 
@@ -13,7 +13,7 @@ namespace UI.MVC {
         }
 
         public void OnActionExecuted (ActionExecutedContext context) {
-            
+            // Not implemented
         }
 
     }
