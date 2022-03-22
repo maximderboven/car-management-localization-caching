@@ -3,7 +3,6 @@ using Insurance.BL;
 using Insurance.DAL;
 using Insurance.DAL.EF;
 using Insurance.Domain;
-using Insurance.Domain.Extensions;
 using Insurance.UI.CA.Extensions;
 using Microsoft.Extensions.DependencyInjection;
 using System;

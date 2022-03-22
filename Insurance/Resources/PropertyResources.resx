@@ -174,13 +174,22 @@
   <data name="Name" xml:space="preserve">
     <value>Name</value>
   </data>
-  <data name="Fuel_Gas" xml:space="preserve">
+  <data name="Gas" xml:space="preserve">
+    <value>Gas</value>
+  </data>
+  <data name="Oil" xml:space="preserve">
+    <value>Oil</value>
+  </data>
+  <data name="Lpg" xml:space="preserve">
+    <value>Lpg</value>
+  </data>
+<data name="Fuel_Gas" xml:space="preserve">
     <value>Gas</value>
   </data>
   <data name="Fuel_Lpg" xml:space="preserve">
     <value>Lpg</value>
   </data>
-  <data name="Fuel_Oil" xml:space="preserve">
+<data name="Fuel_Oil" xml:space="preserve">
     <value>Oil</value>
   </data>
 </root>

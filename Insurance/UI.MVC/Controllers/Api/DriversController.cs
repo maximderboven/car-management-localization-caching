@@ -4,7 +4,6 @@ using System.Diagnostics;
 using System.Linq;
 using Insurance.BL;
 using Insurance.Domain;
-using Insurance.Domain.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using UI.MVC.Models;
 

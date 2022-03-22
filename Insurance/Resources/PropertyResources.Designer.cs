@@ -169,11 +169,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Gas.
+        /// </summary>
+        public static string Gas {
+            get {
+                return ResourceManager.GetString("Gas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Lastname.
         /// </summary>
         public static string LastName {
             get {
                 return ResourceManager.GetString("LastName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Lpg.
+        /// </summary>
+        public static string Lpg {
+            get {
+                return ResourceManager.GetString("Lpg", resourceCulture);
             }
         }
         
@@ -201,6 +219,15 @@ namespace Resources {
         public static string NumberPlate {
             get {
                 return ResourceManager.GetString("NumberPlate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oil.
+        /// </summary>
+        public static string Oil {
+            get {
+                return ResourceManager.GetString("Oil", resourceCulture);
             }
         }
         
