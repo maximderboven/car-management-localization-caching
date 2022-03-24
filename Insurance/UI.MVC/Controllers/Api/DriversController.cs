@@ -23,7 +23,7 @@ namespace UI.MVC.Controllers.Api
         
         // GET
         [HttpGet("dropdown/{id:int}")]
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true, VaryByHeader = "X-Culture")]
         public IActionResult GetDropdown(int id)
         {
             var responses = _manager.GetCarsWithoutDriver(id);

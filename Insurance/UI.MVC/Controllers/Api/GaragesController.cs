@@ -80,10 +80,10 @@ namespace UI.MVC.Controllers.Api
 
             return result;
         }
-        
-        
+
+
         // [HttpGet]
-        // //[ResponseCache(Duration = 15, Location = ResponseCacheLocation.Any)]
+        // //[ResponseCache(Duration = 15, Location = ResponseCacheLocation.Any, VaryByHeader = "X-Culture")]
         // public IActionResult Get()
         // {
         //     var responses = GetGarages().Result;
@@ -104,7 +104,7 @@ namespace UI.MVC.Controllers.Api
         //     
         //     return Ok(garageDto);
         // }
-        
+
         // POST:
         [HttpPost]
         public IActionResult Post(NewGarageDTO response)

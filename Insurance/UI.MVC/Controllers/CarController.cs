@@ -39,7 +39,7 @@ namespace UI.MVC.Controllers
         }
 
         [HttpGet]
-        [ResponseCache(Duration = 30, Location = ResponseCacheLocation.Any, NoStore = false, VaryByQueryKeys = new string[] { "numberplate" })]
+        [ResponseCache(Duration = 30, Location = ResponseCacheLocation.Any, NoStore = false, VaryByQueryKeys = new string[] { "numberplate" }, VaryByHeader = "X-Culture")]
         public IActionResult Details(int numberplate)
         {
             //ViewBag.drivers = _manager.GetDriversOfCar(numberplate);
