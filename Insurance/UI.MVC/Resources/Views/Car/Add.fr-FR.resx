@@ -126,4 +126,12 @@
 		<value>Ajouter une voiture</value>
 		<comment>Add a Car</comment>
 	</data>
+	<data name="Add" xml:space="preserve">
+		<value>Ajouter</value>
+		<comment>Add</comment>
+	</data>
+	<data name="Reset" xml:space="preserve">
+		<value>Resetter</value>
+		<comment>Reset</comment>
+	</data>
 </root>

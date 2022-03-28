@@ -1,4 +1,6 @@
 ﻿@inject IViewLocalizer _localizer
+@inject IDistanceLocalizer _dLocalizer
+@using Distances
 @using Insurance.Domain
 @using Microsoft.AspNetCore.Mvc.Localization
 @model IEnumerable<Insurance.Domain.Car>
@@ -31,7 +33,7 @@
             <td>@car.Brand</td>
             <td>@car.Fuel.GetName()</td>
             <td>@car.Seats</td>
-            <td>@car.Mileage</td>
+            <td>@_dLocalizer.Localize(car.Mileage, DistanceUnit.Miles, DistanceUnit.Kilometers).ToString(2)</td>
             @{
                 var purchasePrice = car.PurchasePrice != null ? ((double)car.PurchasePrice).ToString ("c") : @_localizer["Not Known"].Value;
             }

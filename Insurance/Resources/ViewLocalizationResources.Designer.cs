@@ -367,7 +367,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Car with numberplate: {0} from {1} - on{2} {3}.
+        ///   Looks up a localized string similar to Car with numberplate: {0} from {1} - on {2} {3}.
         /// </summary>
         public static string GetInfo_Car {
             get {

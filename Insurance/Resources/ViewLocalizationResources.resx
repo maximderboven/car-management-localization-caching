@@ -280,7 +280,7 @@
     <value>Which driver would you like to add to this car?</value>
   </data>
   <data name="GetInfo_Car" xml:space="preserve">
-    <value>Car with numberplate: {0} from {1} - on{2} {3}</value>
+    <value>Car with numberplate: {0} from {1} - on {2} {3}</value>
   </data>
   <data name="Managed_By_Garage" xml:space="preserve">
     <value>[Managed by garage '{0}']</value>

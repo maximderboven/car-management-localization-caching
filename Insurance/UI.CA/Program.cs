@@ -17,6 +17,7 @@ namespace Insurance.UI.CA {
     internal class Program
     {
         private readonly IManager _manager;
+        private readonly IDistanceLocalizer _distLocalizer;
         private readonly List<CultureInfo> _supportedCultures = new List<CultureInfo> {
             new CultureInfo ("en-US"),
             new CultureInfo ("fr-FR"),
@@ -38,10 +39,11 @@ namespace Insurance.UI.CA {
             return services;
         }
 
-        public Program(IManager manager)
-        {
+        public Program(IManager manager, IDistanceLocalizer distLocalizer) {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             UpdateCulture (_supportedCultures[0]);
             _manager = manager;
+            _distLocalizer = distLocalizer;
         }
 
         public static void Main(string[] args)
@@ -159,7 +161,7 @@ namespace Insurance.UI.CA {
                 Console.Write (@$"{i + 1}={enums[i].GetName ()},");
             }
 
-            Console.Write(@"\b): ");
+            Console.Write(@"): ");
         }
 
         private void PrintGaragesWithIndex()
@@ -262,7 +264,7 @@ namespace Insurance.UI.CA {
             Console.WriteLine (vlr.Add_a_Car);
             Console.WriteLine (@"=========");
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write (@$"{vlr.PurchasePrice} ({vlr.Optional}): ");
+            Console.Write (@$"{vlr.PurchasePrice} ({vlr.Optional}) ({Thread.CurrentThread.CurrentUICulture.NumberFormat.CurrencySymbol}): ");
             Console.ResetColor ();
 
             int.TryParse (Console.ReadLine (), out int pprice);
@@ -285,7 +287,7 @@ namespace Insurance.UI.CA {
             short.TryParse(Console.ReadLine(), out short amount);
 
             Console.ForegroundColor = ConsoleColor.Blue;
-            Console.Write(vlr.Amount_of_miles_on_count_);
+            Console.Write(@$"{vlr.Amount_of_miles_on_count_} ({_distLocalizer.GetSymbol(DistanceUnit.Kilometers, DistanceUnit.Miles)})");
             Console.ResetColor();
             int.TryParse(Console.ReadLine(), out int miles);
 

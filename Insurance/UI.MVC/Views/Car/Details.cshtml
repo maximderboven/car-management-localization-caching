@@ -1,6 +1,8 @@
-﻿@using Insurance.Domain
+﻿@using Distances
+@using Insurance.Domain
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer _localizer
+@inject IDistanceLocalizer _dLocalizer
 @model Car
 
 @{
@@ -25,7 +27,7 @@
     </tr>
     <tr>
         <th>@_localizer["Mileage"]</th>
-        <td>@Model.Mileage</td>
+        <td>@_dLocalizer.Localize(Model.Mileage, DistanceUnit.Miles, DistanceUnit.Kilometers).ToString(2)</td>
     </tr>
     <tr>
         <th>@_localizer["Purchaseprice"]</th>

@@ -11,14 +11,14 @@ namespace Insurance.Domain
         [Required(ErrorMessageResourceType = typeof (ValidationResources),
             ErrorMessageResourceName = "Required")]
         [StringLength(40,ErrorMessageResourceType = typeof (ValidationResources),
-            ErrorMessageResourceName = "Stringlength",MinimumLength = 3)]
+            ErrorMessageResourceName = "StringLength",MinimumLength = 3)]
         [Display (ResourceType = typeof(PropertyResources), Name = "FirstName")]
         public string FirstName { get; set; }
 
         [Required(ErrorMessageResourceType = typeof (ValidationResources),
             ErrorMessageResourceName = "Required")]
         [StringLength(40, ErrorMessageResourceType = typeof (ValidationResources),
-            ErrorMessageResourceName = "Stringlength",MinimumLength = 3)]
+            ErrorMessageResourceName = "StringLength",MinimumLength = 3)]
         [Display (ResourceType = typeof(PropertyResources), Name = "LastName")]
         public string LastName { get; set; }
 

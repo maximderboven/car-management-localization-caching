@@ -145,4 +145,12 @@
     <value>Voeg een auto toe</value>
     <comment>Add a Car</comment>
   </data>
+  <data name="Add" xml:space="preserve">
+    <value>Toevoegen</value>
+    <comment>Add</comment>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Opnieuw</value>
+    <comment>Reset</comment>
+  </data>
 </root>
