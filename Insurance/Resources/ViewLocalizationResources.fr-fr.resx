@@ -177,10 +177,10 @@
         <value>[Géré par '{0}']</value>
     </data>
     <data name="GetInfo_Car" xml:space="preserve">
-        <value>Voiture avec plaque d'immatriculation: {0} de {1} - le{2} {3}</value>
+        <value>Voiture avec plaque d'immatriculation: {0} de {1} - le {2} {3}</value>
     </data>
     <data name="Born_On_Date" xml:space="preserve">
-        <value>Né à</value>
+        <value>Né à {0}</value>
     </data>
     <data name="From" xml:space="preserve">
         <value>De</value>

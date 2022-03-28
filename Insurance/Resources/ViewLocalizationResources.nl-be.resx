@@ -54,7 +54,7 @@
         <value>Met succes een nieuwe auto toegevoegd.</value>
     </data>
     <data name="Add_Driver" xml:space="preserve">
-        <value>5) Voeg een auto toe</value>
+        <value>5) Voeg een bestuurder toe</value>
     </data>
     <data name="Add_Driver_Failed" xml:space="preserve">
         <value>Kan geen nieuwe bestuurder toevoegen: </value>
@@ -120,7 +120,7 @@
         <value>Garage</value>
     </data>
     <data name="GetInfo_Car" xml:space="preserve">
-        <value>Auto met nummerplaat: {0} van {1} - on{2} {3}</value>
+        <value>Auto met nummerplaat: {0} van {1} - on {2} {3}</value>
     </data>
     <data name="How_much_does_the_rental_cost" xml:space="preserve">
         <value>Hoeveel kost het verhuur: </value>

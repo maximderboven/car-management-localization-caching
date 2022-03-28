@@ -135,4 +135,16 @@
   <data name="After" xml:space="preserve">
     <value>'{0}' moet na '{1} zijn.'</value>
   </data>
+  <data name="Date_In_The_Future" xml:space="preserve">
+    <value>Datum moet in de toekomst zijn.</value>
+  </data>
+  <data name="Date_In_The_Past" xml:space="preserve">
+    <value>Datum moet in het verleden zijn.</value>
+  </data>
+  <data name="Not_Supported" xml:space="preserve">
+    <value>{0} is niet ondersteund.</value>
+  </data>
+  <data name="Positive" xml:space="preserve">
+    <value>'{0}' moet positief zijn.</value>
+  </data>
 </root>
